@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Generate greyscale-safe manuscript figures (FQAP, Gemini 3.6 design guidance)."""
+"""Generate greyscale-safe manuscript figures for the FQAP manuscript."""
 
 from __future__ import annotations
 

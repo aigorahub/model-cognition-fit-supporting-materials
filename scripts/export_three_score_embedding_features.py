@@ -11,6 +11,8 @@ import pandas as pd
 import torch
 from sklearn.model_selection import GroupShuffleSplit
 
+ROOT = Path(__file__).resolve().parents[1]
+
 from run_three_score_embedding_baseline import (
     MODALITIES,
     OUT,

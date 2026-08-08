@@ -3,7 +3,7 @@
 
 The script has two stages:
 1. Score each home-use consumer/product row with Gemini Flash Lite.
-2. Prepare a TabPFN-ready CSV and optionally run TabPFN on Mini 1 over SSH.
+2. Prepare a TabPFN-ready CSV. Optional remote TabPFN via SSH is disabled unless you pass host options; local archived scores are the audit path.
 """
 
 from __future__ import annotations

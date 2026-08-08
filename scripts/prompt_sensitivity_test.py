@@ -10,7 +10,7 @@ If the non-thinking model recovers JAR at least as well under both prompts, the
 conclusion is robust to prompting.
 
 Runs at low concurrency so it can coexist with the full background run on the
-shared key pool.
+API keys from the environment or --keypool-env.
 """
 
 from __future__ import annotations
