@@ -1,0 +1,116 @@
+{
+  "artifact_contract_version": "tabular_v1",
+  "artifacts": {
+    "leaderboard_csv": "<local-path>",
+    "metrics_json": "<local-path>",
+    "predictions_csv": "<local-path>"
+  },
+  "elapsed_seconds": 0.855,
+  "engine": "autogluon",
+  "evaluation": {
+    "mean_absolute_error": -1.9612357294840737,
+    "mean_squared_error": -5.91431271589163,
+    "median_absolute_error": -1.6794667625427246,
+    "pearsonr": 0.15788801181925421,
+    "r2": -0.04845163126412588,
+    "root_mean_squared_error": -2.4319360016027622
+  },
+  "feature_count": 3,
+  "feature_names": [
+    "visual_similarity",
+    "texture_similarity",
+    "flavor_similarity"
+  ],
+  "feature_types": {
+    "flavor_similarity": "continuous",
+    "texture_similarity": "continuous",
+    "visual_similarity": "continuous"
+  },
+  "features": [
+    "visual_similarity",
+    "texture_similarity",
+    "flavor_similarity"
+  ],
+  "hostname": "amm-02.local",
+  "leaderboard": [
+    {
+      "can_infer": true,
+      "eval_metric": "root_mean_squared_error",
+      "fit_order": 2,
+      "fit_time": 0.14074087142944336,
+      "fit_time_marginal": 0.14074087142944336,
+      "model": "ExtraTreesMSE",
+      "pred_time_test": 0.03133702278137207,
+      "pred_time_test_marginal": 0.03133702278137207,
+      "pred_time_val": 0.012002944946289062,
+      "pred_time_val_marginal": 0.012002944946289062,
+      "score_test": -2.423616006877683,
+      "score_val": -2.4839038814764374,
+      "stack_level": 1
+    },
+    {
+      "can_infer": true,
+      "eval_metric": "root_mean_squared_error",
+      "fit_order": 3,
+      "fit_time": 0.4007549285888672,
+      "fit_time_marginal": 0.0012269020080566406,
+      "model": "WeightedEnsemble_L2",
+      "pred_time_test": 0.06705117225646973,
+      "pred_time_test_marginal": 0.009698152542114258,
+      "pred_time_val": 0.024924039840698242,
+      "pred_time_val_marginal": 9.918212890625e-05,
+      "score_test": -2.4319360016027622,
+      "score_val": -2.4802293338309087,
+      "stack_level": 2
+    },
+    {
+      "can_infer": true,
+      "eval_metric": "root_mean_squared_error",
+      "fit_order": 1,
+      "fit_time": 0.2587871551513672,
+      "fit_time_marginal": 0.2587871551513672,
+      "model": "RandomForestMSE",
+      "pred_time_test": 0.0260159969329834,
+      "pred_time_test_marginal": 0.0260159969329834,
+      "pred_time_val": 0.01282191276550293,
+      "pred_time_val_marginal": 0.01282191276550293,
+      "score_test": -2.4565456497185334,
+      "score_val": -2.487590565211433,
+      "stack_level": 1
+    }
+  ],
+  "metrics": {
+    "mean_absolute_error": -1.9612357294840737,
+    "mean_squared_error": -5.91431271589163,
+    "median_absolute_error": -1.6794667625427246,
+    "pearsonr": 0.15788801181925421,
+    "r2": -0.04845163126412588,
+    "root_mean_squared_error": -2.4319360016027622
+  },
+  "model_dir": "<local-path>",
+  "model_dir_bytes": 96505819,
+  "node_label": "mini2-v2",
+  "package_versions": {
+    "autogluon.tabular": "1.5.0",
+    "pandas": "2.3.3",
+    "python": "3.12.13",
+    "scikit-learn": "1.7.2"
+  },
+  "requested_task": "regression",
+  "rows": 2758,
+  "split": {
+    "random_state": 42,
+    "split_column": "split",
+    "strategy": "explicit_column",
+    "test_rows": 551,
+    "test_size": 0.1997824510514866,
+    "test_split_value": "holdout",
+    "train_rows": 2207,
+    "train_split_value": "train"
+  },
+  "target": "liking",
+  "task": "regression",
+  "test_rows": 551,
+  "time_limit": 90,
+  "train_rows": 2207
+}

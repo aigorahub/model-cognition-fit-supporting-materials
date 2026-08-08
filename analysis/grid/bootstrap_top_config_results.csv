@@ -1,0 +1,7 @@
+config_id,model,scale,temperature,mean_r2,median_r2,ci_low,ci_high,ci_width
+Flash Lite_6pt_t07,Gemini 2.5 Flash Lite,6,0.7,0.503733,0.504478,0.428517,0.581845,0.153328
+Flash Lite_6pt_t03,Gemini 2.5 Flash Lite,6,0.3,0.502004,0.503477,0.429050,0.576061,0.147011
+G3 Flash (low)_8pt_t07,Gemini 3 Flash low,8,0.7,0.471596,0.473452,0.395655,0.545626,0.149972
+G3 Flash (low)_8pt_t03,Gemini 3 Flash low,8,0.3,0.462148,0.461464,0.369766,0.537215,0.167449
+G3 Flash (minimal)_6pt_t03,Gemini 3 Flash minimal,6,0.3,0.427907,0.426983,0.350904,0.509586,0.158682
+G3 Flash (minimal)_6pt_t0,Gemini 3 Flash minimal,6,0.0,0.421632,0.420635,0.341194,0.510957,0.169763

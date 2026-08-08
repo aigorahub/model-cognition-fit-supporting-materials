@@ -1,0 +1,18 @@
+{
+  "report_path": "analysis/topic_level/topic_level_mrca_report.html",
+  "valid_rows": 2757,
+  "products": 30,
+  "consumers": 483,
+  "parse_errors": 1,
+  "model_r2": 0.4704136223831431,
+  "model_mae": 1.3671073810958079,
+  "model_metric_label": "GB fallback",
+  "mahieu_order": "Flavor > Texture > Visual",
+  "our_order": "Flavor > Texture > Visual",
+  "modality_spearman_rho": 1.0,
+  "topic_contrast_spearman_rho": 0.7153379617887246,
+  "topic_contrast_kendall_tau": 0.5185327445777148,
+  "ca_dim1_liking_rho": 0.27341490545050057,
+  "ca_dim2_liking_rho": 0.3192436040044494,
+  "comparison_basis": "held-out Gradient Boosting permutation importance, grouped by topic modality"
+}

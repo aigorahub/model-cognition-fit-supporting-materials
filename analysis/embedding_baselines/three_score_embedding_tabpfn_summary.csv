@@ -1,0 +1,5 @@
+engine,validation,feature_set,model,r2_mean,r2_std,mae_mean,rmse_mean,pearsonr,train_rows,test_rows,device,elapsed_seconds,tabpfn_package,torch_package
+tabpfn_local,single explicit GroupShuffleSplit seed42 by consumer,qa_sts,TabPFN v2,0.16967837594607638,,1.7311583554809624,2.164218555522317,,2207,551,mps,16.149,7.1.1,2.8.0
+tabpfn_local,single explicit GroupShuffleSplit seed42 by consumer,tagged_sts,TabPFN v2,0.10759129868883133,,1.8037160190090726,2.243674438283647,,2207,551,mps,18.099,7.1.1,2.8.0
+tabpfn_local,single explicit GroupShuffleSplit seed42 by consumer,raw_sts,TabPFN v2,0.08758680057645418,,1.8200890412650823,2.268682503753895,,2207,551,mps,17.982,7.1.1,2.8.0
+tabpfn_local,single explicit GroupShuffleSplit seed42 by consumer,retrieval_doc,TabPFN v2,0.05706237871818265,,1.84683643219908,2.3063192495969385,,2207,551,mps,18.048,7.1.1,2.8.0

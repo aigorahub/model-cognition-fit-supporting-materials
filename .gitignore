@@ -1,0 +1,8 @@
+__pycache__/
+*.py[cod]
+.DS_Store
+.venv/
+.venv-*/
+*.egg-info/
+_elves_context/
+_elves_review/

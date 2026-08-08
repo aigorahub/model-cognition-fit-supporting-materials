@@ -1,0 +1,8 @@
+{
+  "r2": 0.4704136223831431,
+  "mae": 1.3671073810958079,
+  "rmse": 1.7674387150280462,
+  "train_rows": 2219,
+  "holdout_rows": 538,
+  "model": "GradientBoostingRegressor fallback"
+}

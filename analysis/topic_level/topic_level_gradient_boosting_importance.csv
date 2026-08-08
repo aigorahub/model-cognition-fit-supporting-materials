@@ -1,0 +1,18 @@
+feature,importance_mean,importance_std,topic,modality,label,importance_positive
+overall_flavor_match,0.2676457315314842,0.015488216157692972,overall_flavor_match,Flavor,Overall flavor match,0.2676457315314842
+overall_texture_match,0.07991605688646093,0.005647163314219574,overall_texture_match,Texture,Overall texture match,0.07991605688646093
+overall_visual_match,0.014786157286189571,0.004127616375504701,overall_visual_match,Visual,Overall visual match,0.014786157286189571
+ham_taste_match,0.013427558229652336,0.0024398594719706773,ham_taste_match,Flavor,Ham taste,0.013427558229652336
+bland_insipid_intensity_match,0.012956208375699996,0.005636104617433705,bland_insipid_intensity_match,Flavor,Blandness and intensity,0.012956208375699996
+offnote_aftertaste_match,0.009707735919220672,0.004682331927477073,offnote_aftertaste_match,Flavor,Off-notes and aftertaste,0.009707735919220672
+fat_lean_appearance_match,0.008194850311662094,0.003343202307487316,fat_lean_appearance_match,Visual,Fat and lean appearance,0.008194850311662094
+aromatic_smoky_spiced_match,0.00775414136985666,0.004375756018508708,aromatic_smoky_spiced_match,Flavor,Smoky and spiced notes,0.00775414136985666
+dryness_juiciness_match,0.005006642907779723,0.0017279014924550186,dryness_juiciness_match,Texture,Dryness and juiciness,0.005006642907779723
+firmness_rubberiness_match,0.004782056783194077,0.0064066903087840075,firmness_rubberiness_match,Texture,Firmness and rubberiness,0.004782056783194077
+color_pinkness_match,0.0037632148491717698,0.002991523354102604,color_pinkness_match,Visual,Color and pinkness,0.0037632148491717698
+thickness_chew_match,0.0022929753502000548,0.0041140995626669,thickness_chew_match,Texture,Thickness and chew,0.0022929753502000548
+tenderness_softness_match,0.0004520274348512654,0.004102619911707011,tenderness_softness_match,Texture,Tenderness and softness,0.0004520274348512654
+fibrous_stringy_pieces_match,-0.0006902376791011911,0.0011837378214222514,fibrous_stringy_pieces_match,Texture,Fibrous pieces,0.0
+slice_structure_homogeneity_match,-0.0009827055109731032,0.003871756225841466,slice_structure_homogeneity_match,Visual,Slice structure,0.0
+saltiness_match,-0.0003262565168585363,0.004704107083583359,saltiness_match,Flavor,Saltiness,0.0
+surface_moisture_shine_match,-0.0006389118175582409,0.0016780671585856608,surface_moisture_shine_match,Visual,Moisture and shine,0.0

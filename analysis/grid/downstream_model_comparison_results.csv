@@ -1,0 +1,6 @@
+downstream_learner,r2_mean,r2_std,r2_min,r2_max,r2_median,mae_mean,mae_std,wins,win_rate_percent,source
+TabPFN v2,0.4822,0.0456,0.4107,0.5733,0.4726,1.3153,0.0487,20,74.1,"notebooks/2026_01_15_sensory_grid_comparison_with_temperature (2).ipynb, Cell 15B/16 output"
+Ridge Regression,0.4679,0.0333,0.4268,0.5292,0.4534,1.3421,0.0360,7,25.9,"notebooks/2026_01_15_sensory_grid_comparison_with_temperature (2).ipynb, Cell 15B/16 output"
+Gradient Boosting,0.4502,0.0558,0.3654,0.5544,0.4379,1.3597,0.0612,0,0.0,"notebooks/2026_01_15_sensory_grid_comparison_with_temperature (2).ipynb, Cell 15B/16 output"
+Random Forest,0.4463,0.0524,0.3752,0.5475,0.4325,1.3690,0.0608,0,0.0,"notebooks/2026_01_15_sensory_grid_comparison_with_temperature (2).ipynb, Cell 15B/16 output"
+XGBoost,0.4375,0.0572,0.3608,0.5474,0.4263,1.3783,0.0633,0,0.0,"notebooks/2026_01_15_sensory_grid_comparison_with_temperature (2).ipynb, Cell 15B/16 output"

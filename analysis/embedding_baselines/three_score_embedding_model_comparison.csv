@@ -1,0 +1,30 @@
+engine,validation,feature_set,model,r2_mean,r2_std,mae_mean,rmse_mean,pearsonr,train_rows,test_rows,device,elapsed_seconds,tabpfn_package,torch_package
+tabpfn_local,single explicit GroupShuffleSplit seed42 by consumer,qa_sts,TabPFN v2,0.16967837594607638,,1.7311583554809624,2.164218555522317,,2207.0,551.0,mps,16.149,7.1.1,2.8.0
+tabpfn_local,single explicit GroupShuffleSplit seed42 by consumer,tagged_sts,TabPFN v2,0.10759129868883133,,1.8037160190090726,2.243674438283647,,2207.0,551.0,mps,18.099,7.1.1,2.8.0
+tabpfn_local,single explicit GroupShuffleSplit seed42 by consumer,raw_sts,TabPFN v2,0.08758680057645418,,1.8200890412650823,2.268682503753895,,2207.0,551.0,mps,17.982,7.1.1,2.8.0
+tabpfn_local,single explicit GroupShuffleSplit seed42 by consumer,retrieval_doc,TabPFN v2,0.05706237871818265,,1.84683643219908,2.3063192495969385,,2207.0,551.0,mps,18.048,7.1.1,2.8.0
+autogluon,single explicit GroupShuffleSplit seed42 by consumer,qa-sts,WeightedEnsemble_L2,0.0625523705068844,,1.8302006329295857,2.299595497637664,0.3133704520478815,2207.0,551.0,,,,
+autogluon,single explicit GroupShuffleSplit seed42 by consumer,tagged_sts,ExtraTreesMSE,0.0094863199485134,,1.8722223976432952,2.3637861357047,0.2367933085716423,2207.0,551.0,,,,
+autogluon,single explicit GroupShuffleSplit seed42 by consumer,raw_sts,ExtraTreesMSE,0.0077953231924421,,1.8976213021806272,2.3658029933439755,0.2271439958502175,2207.0,551.0,,,,
+autogluon,single explicit GroupShuffleSplit seed42 by consumer,retrieval_doc,ExtraTreesMSE,-0.0484516312641258,,1.9612357294840737,2.4319360016027622,0.1578880118192542,2207.0,551.0,,,,
+sklearn_local,50 GroupShuffleSplit consumer holdouts,three_modality_scores_qa_sts,extra_trees,0.1347244287208947,0.0303430274047243,1.8886791403001577,2.3307164695721587,,,,,,,
+sklearn_local,50 GroupShuffleSplit consumer holdouts,three_modality_scores_qa_sts,svr_rbf,0.1279995511739065,0.043425663388219,1.8620347779876345,2.3393521759103293,,,,,,,
+sklearn_local,50 GroupShuffleSplit consumer holdouts,three_modality_scores_qa_sts,gbr,0.1249035384547021,0.0299640374128341,1.8966982681368685,2.344030062245573,,,,,,,
+sklearn_local,50 GroupShuffleSplit consumer holdouts,three_modality_scores_tagged_sts,extra_trees,0.0954388142634341,0.0313763364674582,1.9486641440996693,2.3830868387946698,,,,,,,
+sklearn_local,50 GroupShuffleSplit consumer holdouts,three_modality_scores_tagged_sts,gbr,0.0885293209204911,0.0307795971139525,1.9588898768831493,2.39222529786076,,,,,,,
+sklearn_local,50 GroupShuffleSplit consumer holdouts,three_modality_scores_tagged_sts,svr_rbf,0.0663125834046379,0.0351029896843681,1.959289144890604,2.421152349603155,,,,,,,
+sklearn_local,50 GroupShuffleSplit consumer holdouts,three_modality_scores_raw_sts,extra_trees,0.0557361510342648,0.0264696027641339,1.9904707714861187,2.4350631923564716,,,,,,,
+sklearn_local,50 GroupShuffleSplit consumer holdouts,three_modality_scores_raw_sts,gbr,0.0528914094859798,0.0246564868662421,1.992020793268076,2.4387019605639133,,,,,,,
+sklearn_local,50 GroupShuffleSplit consumer holdouts,three_modality_scores_qa_sts,hist_gbr,0.0515587976207492,0.0378286223597572,1.9652089573086904,2.4399008291441944,,,,,,,
+sklearn_local,50 GroupShuffleSplit consumer holdouts,three_modality_scores_retrieval_doc,extra_trees,0.0483149108530734,0.0227404279605933,2.000353360147174,2.4446803027748847,,,,,,,
+sklearn_local,50 GroupShuffleSplit consumer holdouts,whole_text_one_score,extra_trees,0.0436265379429228,0.0182372538722384,2.011583191057507,2.450703990872902,,,,,,,
+sklearn_local,50 GroupShuffleSplit consumer holdouts,whole_text_one_score,gbr,0.0406855562500335,0.021305806823763,2.011550720230448,2.4544283972588925,,,,,,,
+sklearn_local,50 GroupShuffleSplit consumer holdouts,three_modality_scores_retrieval_doc,gbr,0.0386800418006998,0.022754902958021,2.0109347400047572,2.457065535164403,,,,,,,
+sklearn_local,50 GroupShuffleSplit consumer holdouts,three_modality_scores_raw_sts,svr_rbf,0.0339579805843912,0.0227712749376839,1.9836996265407176,2.4630440536441616,,,,,,,
+sklearn_local,50 GroupShuffleSplit consumer holdouts,whole_text_one_score,svr_rbf,0.0255868049046735,0.0220033439250613,1.9822445435559992,2.4738492519564237,,,,,,,
+sklearn_local,50 GroupShuffleSplit consumer holdouts,three_modality_scores_retrieval_doc,svr_rbf,0.0234240374260453,0.0297299177296375,1.9891205219999195,2.476424203008335,,,,,,,
+sklearn_local,50 GroupShuffleSplit consumer holdouts,three_modality_scores_tagged_sts,hist_gbr,0.0167137274212321,0.0518217083045742,2.0095989909820045,2.4838366823405007,,,,,,,
+sklearn_local,50 GroupShuffleSplit consumer holdouts,whole_text_one_score,hist_gbr,0.007217906564369,0.0291718777172773,2.040648515717291,2.4964707384222464,,,,,,,
+sklearn_local,50 GroupShuffleSplit consumer holdouts,dummy_mean,dummy,-0.0043844558219444,0.0061628873338265,2.0645109488271696,2.5118242916316578,,,,,,,
+sklearn_local,50 GroupShuffleSplit consumer holdouts,three_modality_scores_raw_sts,hist_gbr,-0.0250501926921045,0.0399584951922814,2.0605409005643027,2.536630383841412,,,,,,,
+sklearn_local,50 GroupShuffleSplit consumer holdouts,three_modality_scores_retrieval_doc,hist_gbr,-0.043065085920096,0.0396933953660213,2.086043325514127,2.5587671098854585,,,,,,,

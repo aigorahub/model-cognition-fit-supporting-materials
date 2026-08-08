@@ -1,0 +1,33 @@
+SENSORY ALIGNMENT GRID COMPARISON REPORT
+
+Source notebook: notebooks/2026_01_15_sensory_grid_comparison_with_temperature (2).ipynb
+Rows: 27 configurations
+Factors: 3 model configurations x 3 scale granularities x 3 generation temperatures
+Samples: 2,758 consumer-product evaluations
+Validation: consumer-group holdout for single-split metrics; selected top configurations evaluated with 200 bootstrap resamples
+
+Top configurations by single-split R2:
+
+ 1. Flash Lite_6pt_t07             R2=0.5731  MAE=1.2190  Time=101.3s  Errors=114
+ 2. Flash Lite_6pt_t03             R2=0.5521  MAE=1.2399  Time=101.3s  Errors=112
+ 3. Flash Lite_8pt_t07             R2=0.5383  MAE=1.2669  Time=100.6s  Errors=114
+ 4. Flash Lite_4pt_t07             R2=0.5377  MAE=1.2644  Time=101.2s  Errors=126
+ 5. Flash Lite_6pt_t0              R2=0.5342  MAE=1.2643  Time=101.3s  Errors=104
+ 6. Flash Lite_8pt_t0              R2=0.5279  MAE=1.2616  Time=103.9s  Errors=109
+ 7. Flash Lite_4pt_t03             R2=0.5274  MAE=1.2711  Time=101.1s  Errors=121
+ 8. G3 Flash (low)_8pt_t07         R2=0.5182  MAE=1.2620  Time=666.4s  Errors=155
+ 9. Flash Lite_4pt_t0              R2=0.5108  MAE=1.2919  Time=102.3s  Errors=118
+10. Flash Lite_8pt_t03             R2=0.5075  MAE=1.2899  Time=101.3s  Errors=112
+
+Controlled 6-point, temperature 0.7 comparison:
+
+Flash Lite_6pt_t07                 R2=0.5731  MAE=1.2190  Time=101.3s  Errors=114
+G3 Flash (low)_6pt_t07             R2=0.4787  MAE=1.3301  Time=618.9s  Errors=137
+G3 Flash (minimal)_6pt_t07         R2=0.4506  MAE=1.3618  Time=133.0s  Errors=209
+
+Best configuration:
+Flash Lite_6pt_t07, Gemini 2.5 Flash Lite, 6-point scale, temperature 0.7.
+
+Bootstrap summary for selected top configurations is stored in bootstrap_top_config_results.csv.
+Pairwise and family-level bootstrap win probabilities are stored in bootstrap_pairwise_probabilities.csv and bootstrap_family_win_probabilities.csv.
+The downstream learner bake-off summary is stored in downstream_model_comparison_results.csv.

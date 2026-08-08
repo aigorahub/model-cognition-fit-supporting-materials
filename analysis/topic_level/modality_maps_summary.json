@@ -1,0 +1,30 @@
+{
+  "scores_path": "analysis/topic_level/topic_level_flash_lite_scores.csv",
+  "products": 30,
+  "scale_max": 6,
+  "modalities": {
+    "Visual": {
+      "liking_axis_strength": 0.42125210474778,
+      "cos_like_ideal": 0.9830762784434391,
+      "var_share_dim1": 0.7268405926507304,
+      "var_share_dim2": 0.15406402585886778,
+      "mahieu_liking_axis_strength": 0.139
+    },
+    "Texture": {
+      "liking_axis_strength": 0.4936490074172015,
+      "cos_like_ideal": 0.9898993189701456,
+      "var_share_dim1": 0.7171566556971756,
+      "var_share_dim2": 0.10292281979618102,
+      "mahieu_liking_axis_strength": 0.201
+    },
+    "Flavor": {
+      "liking_axis_strength": 0.5509729291122389,
+      "cos_like_ideal": 0.9929816206937105,
+      "var_share_dim1": 0.6471325232380667,
+      "var_share_dim2": 0.18530248284839804,
+      "mahieu_liking_axis_strength": 0.261
+    }
+  },
+  "our_modality_order": "Flavor > Texture > Visual",
+  "mahieu_modality_order": "Flavor > Texture > Visual"
+}

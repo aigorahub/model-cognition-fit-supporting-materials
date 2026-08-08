@@ -1,0 +1,18 @@
+topic,label,modality,rho_row,p_value,mean_score
+ham_taste_match,Ham taste,Flavor,0.6714784910793377,3.1713540383014335e-203,4.06856403622251
+overall_flavor_match,Overall flavor match,Flavor,0.6676321669218812,1.717192333926483e-309,3.6748645268862026
+offnote_aftertaste_match,Off-notes and aftertaste,Flavor,0.6574629027444978,2.470477253192229e-43,3.24188790560472
+bland_insipid_intensity_match,Blandness and intensity,Flavor,0.6262677660313212,1.2035656748755755e-85,2.9548387096774196
+overall_texture_match,Overall texture match,Texture,0.5537122013096453,4.3274896001013395e-198,3.810953346855984
+fibrous_stringy_pieces_match,Fibrous pieces,Texture,0.5504752679741429,8.604111069284771e-44,3.5522388059701493
+tenderness_softness_match,Tenderness and softness,Texture,0.5152661423396465,7.134283631675724e-128,4.145899893503727
+dryness_juiciness_match,Dryness and juiciness,Texture,0.4940717876008914,4.792579139939545e-65,3.432146294513956
+aromatic_smoky_spiced_match,Smoky and spiced notes,Flavor,0.48976803547866143,8.765280382287896e-53,3.256140350877193
+firmness_rubberiness_match,Firmness and rubberiness,Texture,0.4852131238718374,3.822572145323663e-57,3.5537974683544302
+overall_visual_match,Overall visual match,Visual,0.4851429028412896,1.0134716892247912e-139,3.739204064352244
+slice_structure_homogeneity_match,Slice structure,Visual,0.4747786010307919,5.585387973629413e-63,3.239782016348774
+saltiness_match,Saltiness,Flavor,0.47216410041752366,4.949871909147716e-93,4.347172081829122
+surface_moisture_shine_match,Moisture and shine,Visual,0.46077291417965693,5.0791479775476955e-27,3.2807377049180326
+thickness_chew_match,Thickness and chew,Texture,0.45153695115657255,5.236040086761254e-38,3.622435020519836
+fat_lean_appearance_match,Fat and lean appearance,Visual,0.43022605420134785,1.201183272872225e-74,3.9168195718654433
+color_pinkness_match,Color and pinkness,Visual,0.3057796312305783,6.263726145921534e-38,4.312832643406268

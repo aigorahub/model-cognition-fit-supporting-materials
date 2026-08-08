@@ -1,0 +1,4 @@
+family_a,family_b,p_family_a_beats_family_b
+Gemini 2.5 Flash Lite,Gemini 3 Flash low,0.912
+Gemini 2.5 Flash Lite,Gemini 3 Flash minimal,0.993
+Gemini 3 Flash low,Gemini 3 Flash minimal,0.945

@@ -1,0 +1,28 @@
+config_id,model,model_name,thinking_config,is_gemini3,scale,temperature,r2,mae,baseline_mae,llm_time,errors,n_valid,error_rate
+Flash Lite_4pt_t0,Gemini 2.5 Flash Lite,gemini-flash-lite-latest,,False,4,0.0,0.5108,1.2919,1.9204,102.3,118,2758,0.0428
+Flash Lite_4pt_t03,Gemini 2.5 Flash Lite,gemini-flash-lite-latest,,False,4,0.3,0.5274,1.2711,1.9204,101.1,121,2758,0.0439
+Flash Lite_4pt_t07,Gemini 2.5 Flash Lite,gemini-flash-lite-latest,,False,4,0.7,0.5377,1.2644,1.9204,101.2,126,2758,0.0457
+Flash Lite_6pt_t0,Gemini 2.5 Flash Lite,gemini-flash-lite-latest,,False,6,0.0,0.5342,1.2643,1.9204,101.3,104,2758,0.0377
+Flash Lite_6pt_t03,Gemini 2.5 Flash Lite,gemini-flash-lite-latest,,False,6,0.3,0.5521,1.2399,1.9204,101.3,112,2758,0.0406
+Flash Lite_6pt_t07,Gemini 2.5 Flash Lite,gemini-flash-lite-latest,,False,6,0.7,0.5731,1.2190,1.9204,101.3,114,2758,0.0413
+Flash Lite_8pt_t0,Gemini 2.5 Flash Lite,gemini-flash-lite-latest,,False,8,0.0,0.5279,1.2616,1.9204,103.9,109,2758,0.0395
+Flash Lite_8pt_t03,Gemini 2.5 Flash Lite,gemini-flash-lite-latest,,False,8,0.3,0.5075,1.2899,1.9204,101.3,112,2758,0.0406
+Flash Lite_8pt_t07,Gemini 2.5 Flash Lite,gemini-flash-lite-latest,,False,8,0.7,0.5383,1.2669,1.9204,100.6,114,2758,0.0413
+G3 Flash (minimal)_4pt_t0,Gemini 3 Flash minimal,gemini-3-flash-preview,"{""thinkingLevel"": ""minimal""}",True,4,0.0,0.4214,1.3834,1.9204,123.7,113,2758,0.0410
+G3 Flash (minimal)_4pt_t03,Gemini 3 Flash minimal,gemini-3-flash-preview,"{""thinkingLevel"": ""minimal""}",True,4,0.3,0.4364,1.3689,1.9204,124.9,125,2758,0.0453
+G3 Flash (minimal)_4pt_t07,Gemini 3 Flash minimal,gemini-3-flash-preview,"{""thinkingLevel"": ""minimal""}",True,4,0.7,0.4111,1.3839,1.9204,126.9,131,2758,0.0475
+G3 Flash (minimal)_6pt_t0,Gemini 3 Flash minimal,gemini-3-flash-preview,"{""thinkingLevel"": ""minimal""}",True,6,0.0,0.4597,1.3507,1.9204,137.3,196,2758,0.0711
+G3 Flash (minimal)_6pt_t03,Gemini 3 Flash minimal,gemini-3-flash-preview,"{""thinkingLevel"": ""minimal""}",True,6,0.3,0.4654,1.3320,1.9204,134.0,204,2758,0.0740
+G3 Flash (minimal)_6pt_t07,Gemini 3 Flash minimal,gemini-3-flash-preview,"{""thinkingLevel"": ""minimal""}",True,6,0.7,0.4506,1.3618,1.9204,133.0,209,2758,0.0758
+G3 Flash (minimal)_8pt_t0,Gemini 3 Flash minimal,gemini-3-flash-preview,"{""thinkingLevel"": ""minimal""}",True,8,0.0,0.4311,1.3474,1.9204,133.5,229,2758,0.0830
+G3 Flash (minimal)_8pt_t03,Gemini 3 Flash minimal,gemini-3-flash-preview,"{""thinkingLevel"": ""minimal""}",True,8,0.3,0.4222,1.3599,1.9204,134.1,232,2758,0.0841
+G3 Flash (minimal)_8pt_t07,Gemini 3 Flash minimal,gemini-3-flash-preview,"{""thinkingLevel"": ""minimal""}",True,8,0.7,0.4586,1.3413,1.9204,132.7,231,2758,0.0838
+G3 Flash (low)_4pt_t0,Gemini 3 Flash low,gemini-3-flash-preview,"{""thinkingLevel"": ""low""}",True,4,0.0,0.4619,1.3580,1.9204,547.8,85,2758,0.0308
+G3 Flash (low)_4pt_t03,Gemini 3 Flash low,gemini-3-flash-preview,"{""thinkingLevel"": ""low""}",True,4,0.3,0.4327,1.3851,1.9204,553.8,89,2758,0.0323
+G3 Flash (low)_4pt_t07,Gemini 3 Flash low,gemini-3-flash-preview,"{""thinkingLevel"": ""low""}",True,4,0.7,0.4394,1.3683,1.9204,582.6,87,2758,0.0315
+G3 Flash (low)_6pt_t0,Gemini 3 Flash low,gemini-3-flash-preview,"{""thinkingLevel"": ""low""}",True,6,0.0,0.4730,1.3111,1.9204,615.2,134,2758,0.0486
+G3 Flash (low)_6pt_t03,Gemini 3 Flash low,gemini-3-flash-preview,"{""thinkingLevel"": ""low""}",True,6,0.3,0.4840,1.2917,1.9204,614.6,128,2758,0.0464
+G3 Flash (low)_6pt_t07,Gemini 3 Flash low,gemini-3-flash-preview,"{""thinkingLevel"": ""low""}",True,6,0.7,0.4787,1.3301,1.9204,618.9,137,2758,0.0497
+G3 Flash (low)_8pt_t0,Gemini 3 Flash low,gemini-3-flash-preview,"{""thinkingLevel"": ""low""}",True,8,0.0,0.4673,1.3098,1.9204,669.5,154,2758,0.0558
+G3 Flash (low)_8pt_t03,Gemini 3 Flash low,gemini-3-flash-preview,"{""thinkingLevel"": ""low""}",True,8,0.3,0.5019,1.2943,1.9204,659.1,149,2758,0.0540
+G3 Flash (low)_8pt_t07,Gemini 3 Flash low,gemini-3-flash-preview,"{""thinkingLevel"": ""low""}",True,8,0.7,0.5182,1.2620,1.9204,666.4,155,2758,0.0562

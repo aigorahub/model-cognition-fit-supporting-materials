@@ -1,0 +1,9 @@
+{
+  "model_id": "google/embeddinggemma-300m",
+  "n_rows": 2758,
+  "n_consumers": 483,
+  "splits": 50,
+  "created_at": "2026-05-22 12:43:53",
+  "source_dataset": "data/raw/dataset.xlsx",
+  "target": "Predict 0-10 liking from three actual-vs-ideal modality similarity scores."
+}

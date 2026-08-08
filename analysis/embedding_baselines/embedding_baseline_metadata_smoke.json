@@ -1,0 +1,11 @@
+{
+  "model_id": "google/embeddinggemma-300m",
+  "n_rows": 240,
+  "n_consumers": 40,
+  "splits": 3,
+  "pca_components": 12,
+  "skip_chunked": true,
+  "created_at": "2026-05-22 12:00:24",
+  "source_dataset": "data/raw/dataset.xlsx",
+  "guide_source": "EMBEDDING_GUIDE.md"
+}

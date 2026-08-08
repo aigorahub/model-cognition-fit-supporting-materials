@@ -1,0 +1,22 @@
+{
+  "figures": [
+    "workflow_scoring",
+    "grid_performance",
+    "operational_comparison",
+    "modality_hierarchy",
+    "topic_rank_comparison",
+    "llm_scoring_example",
+    "jar_validation",
+    "cross_model_jar"
+  ],
+  "source_data": [
+    "analysis/grid/bootstrap_family_win_probabilities.csv",
+    "analysis/grid/bootstrap_pairwise_probabilities.csv",
+    "analysis/grid/bootstrap_top_config_results.csv",
+    "analysis/grid/downstream_model_comparison_results.csv",
+    "analysis/grid/grid_comparison_results.csv",
+    "analysis/grid/feature_importance_results.csv",
+    "analysis/topic_level/topic_level_contrast_points.csv"
+  ],
+  "design": "Gemini 3.6 Flash guidance: greyscale fills, marker legends, adjustText labels, bar callouts"
+}

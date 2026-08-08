@@ -1,0 +1,31 @@
+row_config,column_config,p_row_beats_column
+Flash Lite_6pt_t07,Flash Lite_6pt_t03,0.540
+Flash Lite_6pt_t07,G3 Flash (low)_8pt_t07,0.905
+Flash Lite_6pt_t07,G3 Flash (low)_8pt_t03,0.935
+Flash Lite_6pt_t07,G3 Flash (minimal)_6pt_t03,0.990
+Flash Lite_6pt_t07,G3 Flash (minimal)_6pt_t0,0.985
+Flash Lite_6pt_t03,Flash Lite_6pt_t07,0.460
+Flash Lite_6pt_t03,G3 Flash (low)_8pt_t07,0.905
+Flash Lite_6pt_t03,G3 Flash (low)_8pt_t03,0.920
+Flash Lite_6pt_t03,G3 Flash (minimal)_6pt_t03,0.990
+Flash Lite_6pt_t03,G3 Flash (minimal)_6pt_t0,0.995
+G3 Flash (low)_8pt_t07,Flash Lite_6pt_t07,0.095
+G3 Flash (low)_8pt_t07,Flash Lite_6pt_t03,0.095
+G3 Flash (low)_8pt_t07,G3 Flash (low)_8pt_t03,0.760
+G3 Flash (low)_8pt_t07,G3 Flash (minimal)_6pt_t03,0.965
+G3 Flash (low)_8pt_t07,G3 Flash (minimal)_6pt_t0,0.970
+G3 Flash (low)_8pt_t03,Flash Lite_6pt_t07,0.065
+G3 Flash (low)_8pt_t03,Flash Lite_6pt_t03,0.080
+G3 Flash (low)_8pt_t03,G3 Flash (low)_8pt_t07,0.240
+G3 Flash (low)_8pt_t03,G3 Flash (minimal)_6pt_t03,0.905
+G3 Flash (low)_8pt_t03,G3 Flash (minimal)_6pt_t0,0.925
+G3 Flash (minimal)_6pt_t03,Flash Lite_6pt_t07,0.010
+G3 Flash (minimal)_6pt_t03,Flash Lite_6pt_t03,0.010
+G3 Flash (minimal)_6pt_t03,G3 Flash (low)_8pt_t07,0.035
+G3 Flash (minimal)_6pt_t03,G3 Flash (low)_8pt_t03,0.095
+G3 Flash (minimal)_6pt_t03,G3 Flash (minimal)_6pt_t0,0.745
+G3 Flash (minimal)_6pt_t0,Flash Lite_6pt_t07,0.015
+G3 Flash (minimal)_6pt_t0,Flash Lite_6pt_t03,0.005
+G3 Flash (minimal)_6pt_t0,G3 Flash (low)_8pt_t07,0.030
+G3 Flash (minimal)_6pt_t0,G3 Flash (low)_8pt_t03,0.075
+G3 Flash (minimal)_6pt_t0,G3 Flash (minimal)_6pt_t03,0.255

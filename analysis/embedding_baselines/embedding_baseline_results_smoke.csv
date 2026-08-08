@@ -1,0 +1,94 @@
+feature_set,model,split,r2,mae,rmse,n_train,n_test,pca_components,description
+dummy_mean,dummy,0,-0.033759236335754395,1.9191874265670776,2.3179233979872516,186,54,0,Mean-only baseline.
+dummy_mean,dummy,1,-0.20817506313323975,2.046882152557373,2.414258535382092,186,54,0,Mean-only baseline.
+dummy_mean,dummy,2,-0.01244211196899414,1.813070297241211,2.209441848455796,199,41,0,Mean-only baseline.
+whole_text_cosine,ridge,0,0.057906953124265304,1.7992217789262472,2.2127699184848586,186,54,0,STS embedding cosine between all actual and all ideal comments.
+whole_text_cosine,hist_gbr,0,-0.06966592892200607,1.8634331130906578,2.357835167376688,186,54,0,STS embedding cosine between all actual and all ideal comments.
+whole_text_cosine,gbr,0,-0.10288999139902688,1.8461687748746654,2.3941726060201836,186,54,0,STS embedding cosine between all actual and all ideal comments.
+whole_text_cosine,extra_trees,0,0.05304292458286752,1.7991724260145494,2.218474832402328,186,54,0,STS embedding cosine between all actual and all ideal comments.
+whole_text_cosine,svr_rbf,0,0.14534985731362804,1.6703142729943607,2.1075774552316813,186,54,0,STS embedding cosine between all actual and all ideal comments.
+whole_text_cosine,ridge,1,-0.10072739418242782,1.957130048753457,2.3044044740996643,186,54,0,STS embedding cosine between all actual and all ideal comments.
+whole_text_cosine,hist_gbr,1,-0.45842390914624387,2.2448275227749934,2.652532476704633,186,54,0,STS embedding cosine between all actual and all ideal comments.
+whole_text_cosine,gbr,1,-0.35069321205027015,2.1564433505306533,2.552684732504338,186,54,0,STS embedding cosine between all actual and all ideal comments.
+whole_text_cosine,extra_trees,1,-0.14508960729659748,2.007961829175166,2.3503825752052223,186,54,0,STS embedding cosine between all actual and all ideal comments.
+whole_text_cosine,svr_rbf,1,-0.005728819363262083,1.851947570572162,2.2027198717533163,186,54,0,STS embedding cosine between all actual and all ideal comments.
+whole_text_cosine,ridge,2,0.06582093608895234,1.7100100400780858,2.122328047989057,199,41,0,STS embedding cosine between all actual and all ideal comments.
+whole_text_cosine,hist_gbr,2,0.2102986982641709,1.5248272933097438,1.951321705981751,199,41,0,STS embedding cosine between all actual and all ideal comments.
+whole_text_cosine,gbr,2,-0.5104552811853327,2.0234812942188465,2.6986799633822116,199,41,0,STS embedding cosine between all actual and all ideal comments.
+whole_text_cosine,extra_trees,2,0.1770889438087413,1.5831544614999655,1.9919291963880752,199,41,0,STS embedding cosine between all actual and all ideal comments.
+whole_text_cosine,svr_rbf,2,0.06349905737595574,1.6552098854389912,2.1249639078217855,199,41,0,STS embedding cosine between all actual and all ideal comments.
+whole_text_cosine_plus_diff,ridge,0,0.4966456695506827,1.3708201713143067,1.6174328679152774,186,54,12,Whole-text cosine plus PCA of ideal-minus-actual vector.
+whole_text_cosine_plus_diff,hist_gbr,0,0.47583912874592504,1.443435605783227,1.6505232955241047,186,54,12,Whole-text cosine plus PCA of ideal-minus-actual vector.
+whole_text_cosine_plus_diff,gbr,0,0.5759450688918659,1.2388818772263837,1.4845691053439254,186,54,12,Whole-text cosine plus PCA of ideal-minus-actual vector.
+whole_text_cosine_plus_diff,extra_trees,0,0.49256544801865965,1.3248724307737108,1.6239751424026478,186,54,12,Whole-text cosine plus PCA of ideal-minus-actual vector.
+whole_text_cosine_plus_diff,svr_rbf,0,0.515626774306306,1.3618518906249815,1.5866437453060867,186,54,12,Whole-text cosine plus PCA of ideal-minus-actual vector.
+whole_text_cosine_plus_diff,ridge,1,0.48805514929325833,1.225381827410513,1.5715579928937544,186,54,12,Whole-text cosine plus PCA of ideal-minus-actual vector.
+whole_text_cosine_plus_diff,hist_gbr,1,0.3745661020890023,1.3059075557768995,1.7370388433694781,186,54,12,Whole-text cosine plus PCA of ideal-minus-actual vector.
+whole_text_cosine_plus_diff,gbr,1,0.3947780718170434,1.3770545010778485,1.7087406439834583,186,54,12,Whole-text cosine plus PCA of ideal-minus-actual vector.
+whole_text_cosine_plus_diff,extra_trees,1,0.38337260317605903,1.4082950598322834,1.724766191011069,186,54,12,Whole-text cosine plus PCA of ideal-minus-actual vector.
+whole_text_cosine_plus_diff,svr_rbf,1,0.47107245236253126,1.2947819835035592,1.5974119003911798,186,54,12,Whole-text cosine plus PCA of ideal-minus-actual vector.
+whole_text_cosine_plus_diff,ridge,2,0.6017579755593838,1.0746508652732827,1.3857056638958065,199,41,12,Whole-text cosine plus PCA of ideal-minus-actual vector.
+whole_text_cosine_plus_diff,hist_gbr,2,0.41627828982241855,1.4559294048154154,1.6776461776722793,199,41,12,Whole-text cosine plus PCA of ideal-minus-actual vector.
+whole_text_cosine_plus_diff,gbr,2,0.519620567626555,1.2822354506113849,1.521912383872802,199,41,12,Whole-text cosine plus PCA of ideal-minus-actual vector.
+whole_text_cosine_plus_diff,extra_trees,2,0.504026915176434,1.2678884564646207,1.5464166006099231,199,41,12,Whole-text cosine plus PCA of ideal-minus-actual vector.
+whole_text_cosine_plus_diff,svr_rbf,2,0.4551509199345575,1.307070766466472,1.6208228833544849,199,41,12,Whole-text cosine plus PCA of ideal-minus-actual vector.
+modality_cosines,ridge,0,0.07453781924803682,1.8023327225809065,2.193151824644704,186,54,0,"Whole cosine, three modality cosines, and text-length controls."
+modality_cosines,hist_gbr,0,-0.2693839609708222,2.080815850684236,2.5685372168964817,186,54,0,"Whole cosine, three modality cosines, and text-length controls."
+modality_cosines,gbr,0,0.12559926315230752,1.7549152367340335,2.1317909638083856,186,54,0,"Whole cosine, three modality cosines, and text-length controls."
+modality_cosines,extra_trees,0,0.13265631121507504,1.7071304394214026,2.1231709866795625,186,54,0,"Whole cosine, three modality cosines, and text-length controls."
+modality_cosines,svr_rbf,0,0.13810068997214375,1.6631503908206942,2.1164968481362285,186,54,0,"Whole cosine, three modality cosines, and text-length controls."
+modality_cosines,ridge,1,-0.059412846033222166,1.9307345245573597,2.2607442742963673,186,54,0,"Whole cosine, three modality cosines, and text-length controls."
+modality_cosines,hist_gbr,1,-0.1316978580217345,1.88678510535334,2.3365983688399825,186,54,0,"Whole cosine, three modality cosines, and text-length controls."
+modality_cosines,gbr,1,-0.02094319458510774,1.8117269820328632,2.2193183881350853,186,54,0,"Whole cosine, three modality cosines, and text-length controls."
+modality_cosines,extra_trees,1,-0.014210808299619737,1.861570990590829,2.2119888804276773,186,54,0,"Whole cosine, three modality cosines, and text-length controls."
+modality_cosines,svr_rbf,1,-0.043260360774399764,1.787211552671468,2.243443701150498,186,54,0,"Whole cosine, three modality cosines, and text-length controls."
+modality_cosines,ridge,2,0.03549538007991848,1.7491664042161892,2.15650070627439,199,41,0,"Whole cosine, three modality cosines, and text-length controls."
+modality_cosines,hist_gbr,2,-0.10610778089541317,1.746640651283465,2.3093841047735313,199,41,0,"Whole cosine, three modality cosines, and text-length controls."
+modality_cosines,gbr,2,-0.10530775283821625,1.68418141068629,2.3085487855078837,199,41,0,"Whole cosine, three modality cosines, and text-length controls."
+modality_cosines,extra_trees,2,0.18904476348356236,1.5711938696947076,1.9774061923814383,199,41,0,"Whole cosine, three modality cosines, and text-length controls."
+modality_cosines,svr_rbf,2,0.24673352998970943,1.4653221909178007,1.9057756193558029,199,41,0,"Whole cosine, three modality cosines, and text-length controls."
+modality_cosines_plus_diff,ridge,0,0.38740719522055655,1.3907462736455598,1.7843305256118156,186,54,12,Modality cosines plus PCA of modality-specific vector differences.
+modality_cosines_plus_diff,hist_gbr,0,0.04222339350292703,1.748765749714112,2.2311125143518975,186,54,12,Modality cosines plus PCA of modality-specific vector differences.
+modality_cosines_plus_diff,gbr,0,0.14431955113462913,1.6502854686247093,2.1088474462629088,186,54,12,Modality cosines plus PCA of modality-specific vector differences.
+modality_cosines_plus_diff,extra_trees,0,0.2647449881350008,1.5417454918112439,1.9548271236070645,186,54,12,Modality cosines plus PCA of modality-specific vector differences.
+modality_cosines_plus_diff,svr_rbf,0,0.3269778035811123,1.4607387332302622,1.870268904881351,186,54,12,Modality cosines plus PCA of modality-specific vector differences.
+modality_cosines_plus_diff,ridge,1,0.5376508365195348,1.1782551644735884,1.4934953003762605,186,54,12,Modality cosines plus PCA of modality-specific vector differences.
+modality_cosines_plus_diff,hist_gbr,1,0.48153491384887337,1.2752698346886884,1.5815341724535257,186,54,12,Modality cosines plus PCA of modality-specific vector differences.
+modality_cosines_plus_diff,gbr,1,0.36233397786361654,1.4277143692028451,1.7539429391558208,186,54,12,Modality cosines plus PCA of modality-specific vector differences.
+modality_cosines_plus_diff,extra_trees,1,0.31818617058569965,1.5303771002116089,1.8136426708055862,186,54,12,Modality cosines plus PCA of modality-specific vector differences.
+modality_cosines_plus_diff,svr_rbf,1,0.3933360292314678,1.3278705314109114,1.7107751131911793,186,54,12,Modality cosines plus PCA of modality-specific vector differences.
+modality_cosines_plus_diff,ridge,2,0.5839390008307741,1.0981407479634924,1.4163674986325379,199,41,12,Modality cosines plus PCA of modality-specific vector differences.
+modality_cosines_plus_diff,hist_gbr,2,0.16669957992819673,1.5096373889039987,2.0044639456092237,199,41,12,Modality cosines plus PCA of modality-specific vector differences.
+modality_cosines_plus_diff,gbr,2,0.3630054709699221,1.2905471811510585,1.752529349332336,199,41,12,Modality cosines plus PCA of modality-specific vector differences.
+modality_cosines_plus_diff,extra_trees,2,0.4465891317058195,1.267072319558159,1.6335080932805779,199,41,12,Modality cosines plus PCA of modality-specific vector differences.
+modality_cosines_plus_diff,svr_rbf,2,0.4365366247458572,1.2909687172902962,1.6482773654337952,199,41,12,Modality cosines plus PCA of modality-specific vector differences.
+modality_cosines_plus_absdiff,ridge,0,0.2713807846852364,1.604654150601391,1.9459858128163532,186,54,12,Modality cosines plus PCA of absolute modality differences.
+modality_cosines_plus_absdiff,hist_gbr,0,-0.45829194126401185,2.2712475296208874,2.7530341425324516,186,54,12,Modality cosines plus PCA of absolute modality differences.
+modality_cosines_plus_absdiff,gbr,0,-0.15135689435836985,1.9860192067360443,2.4462134092021657,186,54,12,Modality cosines plus PCA of absolute modality differences.
+modality_cosines_plus_absdiff,extra_trees,0,0.012958137890931698,1.8046902941249958,2.264942315263755,186,54,12,Modality cosines plus PCA of absolute modality differences.
+modality_cosines_plus_absdiff,svr_rbf,0,0.12709035837955862,1.695635912503637,2.129972541489816,186,54,12,Modality cosines plus PCA of absolute modality differences.
+modality_cosines_plus_absdiff,ridge,1,0.1346649398919355,1.7160939179417152,2.0432004344060926,186,54,12,Modality cosines plus PCA of absolute modality differences.
+modality_cosines_plus_absdiff,hist_gbr,1,-0.00902569877951609,1.8947095844434823,2.2063272855643277,186,54,12,Modality cosines plus PCA of absolute modality differences.
+modality_cosines_plus_absdiff,gbr,1,0.11075537817877246,1.8415240778600985,2.0712353319318484,186,54,12,Modality cosines plus PCA of absolute modality differences.
+modality_cosines_plus_absdiff,extra_trees,1,0.03339451255752879,1.872717035765197,2.1594514795721422,186,54,12,Modality cosines plus PCA of absolute modality differences.
+modality_cosines_plus_absdiff,svr_rbf,1,0.041568355756818054,1.769172808265512,2.1503016806514057,186,54,12,Modality cosines plus PCA of absolute modality differences.
+modality_cosines_plus_absdiff,ridge,2,0.062810992396798,1.7060685038883876,2.1257443901034634,199,41,12,Modality cosines plus PCA of absolute modality differences.
+modality_cosines_plus_absdiff,hist_gbr,2,0.052947486159561574,1.6435967035076062,2.13690137838805,199,41,12,Modality cosines plus PCA of absolute modality differences.
+modality_cosines_plus_absdiff,gbr,2,0.10341009246744748,1.6108463968381805,2.079190927974653,199,41,12,Modality cosines plus PCA of absolute modality differences.
+modality_cosines_plus_absdiff,extra_trees,2,0.21272342094646446,1.5377078664243375,1.9483237044297688,199,41,12,Modality cosines plus PCA of absolute modality differences.
+modality_cosines_plus_absdiff,svr_rbf,2,0.3243460598486744,1.4064327812839583,1.8049268497738615,199,41,12,Modality cosines plus PCA of absolute modality differences.
+qa_modality_cosines_plus_diff,ridge,0,0.5469961914533057,1.188350169698022,1.5344059933742473,186,54,12,Q+A modality embeddings plus PCA of modality-specific differences.
+qa_modality_cosines_plus_diff,hist_gbr,0,0.5739412831617688,1.1365858734486562,1.4880724869748185,186,54,12,Q+A modality embeddings plus PCA of modality-specific differences.
+qa_modality_cosines_plus_diff,gbr,0,0.5740385350160042,1.1313711529914936,1.4879026441079632,186,54,12,Q+A modality embeddings plus PCA of modality-specific differences.
+qa_modality_cosines_plus_diff,extra_trees,0,0.5338729601515355,1.2145785653391126,1.5564727010405521,186,54,12,Q+A modality embeddings plus PCA of modality-specific differences.
+qa_modality_cosines_plus_diff,svr_rbf,0,0.583681871100348,1.0992208714780853,1.4709639220703663,186,54,12,Q+A modality embeddings plus PCA of modality-specific differences.
+qa_modality_cosines_plus_diff,ridge,1,0.6052301003654526,1.172141377275539,1.3800373415190608,186,54,12,Q+A modality embeddings plus PCA of modality-specific differences.
+qa_modality_cosines_plus_diff,hist_gbr,1,0.5895229236979609,1.165330674260945,1.4072241394926264,186,54,12,Q+A modality embeddings plus PCA of modality-specific differences.
+qa_modality_cosines_plus_diff,gbr,1,0.5351974752460795,1.2321546233321483,1.497452521451891,186,54,12,Q+A modality embeddings plus PCA of modality-specific differences.
+qa_modality_cosines_plus_diff,extra_trees,1,0.4568822491289062,1.3373466845031448,1.6186979653759255,186,54,12,Q+A modality embeddings plus PCA of modality-specific differences.
+qa_modality_cosines_plus_diff,svr_rbf,1,0.4619622416278203,1.2683501106518777,1.6111100232277595,186,54,12,Q+A modality embeddings plus PCA of modality-specific differences.
+qa_modality_cosines_plus_diff,ridge,2,0.6584598436215926,0.9781867736551669,1.2832708673144804,199,41,12,Q+A modality embeddings plus PCA of modality-specific differences.
+qa_modality_cosines_plus_diff,hist_gbr,2,0.3294905376516053,1.3898962876071426,1.7980422982966537,199,41,12,Q+A modality embeddings plus PCA of modality-specific differences.
+qa_modality_cosines_plus_diff,gbr,2,0.4233589994123147,1.180817588817339,1.6674399706628098,199,41,12,Q+A modality embeddings plus PCA of modality-specific differences.
+qa_modality_cosines_plus_diff,extra_trees,2,0.5196866626236794,1.149174041172675,1.521807680956581,199,41,12,Q+A modality embeddings plus PCA of modality-specific differences.
+qa_modality_cosines_plus_diff,svr_rbf,2,0.5218399491201766,1.1528921732651796,1.5183926510444736,199,41,12,Q+A modality embeddings plus PCA of modality-specific differences.

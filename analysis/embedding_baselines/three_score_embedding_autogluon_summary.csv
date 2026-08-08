@@ -1,0 +1,5 @@
+engine,validation,feature_set,model,r2_mean,r2_std,mae_mean,rmse_mean,pearsonr,train_rows,test_rows
+autogluon,single explicit GroupShuffleSplit seed42 by consumer,qa-sts,WeightedEnsemble_L2,0.0625523705068844,,1.8302006329295857,2.299595497637664,0.3133704520478815,2207.0,551.0
+autogluon,single explicit GroupShuffleSplit seed42 by consumer,tagged_sts,ExtraTreesMSE,0.0094863199485134,,1.8722223976432952,2.3637861357047,0.2367933085716423,2207.0,551.0
+autogluon,single explicit GroupShuffleSplit seed42 by consumer,raw_sts,ExtraTreesMSE,0.0077953231924421,,1.8976213021806272,2.3658029933439755,0.2271439958502175,2207.0,551.0
+autogluon,single explicit GroupShuffleSplit seed42 by consumer,retrieval_doc,ExtraTreesMSE,-0.0484516312641258,,1.9612357294840737,2.4319360016027622,0.1578880118192542,2207.0,551.0

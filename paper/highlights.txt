@@ -1,0 +1,5 @@
+Direct LLM scoring predicted liking from actual and ideal ham comments.
+Thinking settings changed accuracy, reliability, and runtime in surprising ways.
+Findings are from one model family at the time of the work, not universal laws.
+Match the scoring setup to the judgment: pilot thinking for sensory free text.
+Open or closed models: try the settings on your own task before locking a pipeline.

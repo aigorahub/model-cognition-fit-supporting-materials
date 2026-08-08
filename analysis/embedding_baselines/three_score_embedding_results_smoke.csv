@@ -1,0 +1,131 @@
+feature_set,model,split,r2,mae,rmse,n_train,n_test,n_scores,description
+dummy_mean,dummy,0,-0.033759357972840576,1.9191875746714453,2.317923461778611,186,54,1,Mean-only baseline.
+whole_text_one_score,ridge,0,0.06649901562381122,1.7866310784600659,2.202656395899472,186,54,1,"One cosine score after concatenating visual, texture, and flavor."
+whole_text_one_score,hist_gbr,0,-0.06966592366134083,1.8634331485647264,2.357835187971212,186,54,1,"One cosine score after concatenating visual, texture, and flavor."
+whole_text_one_score,gbr,0,-0.08396641465352195,1.8327513680499787,2.373543948785301,186,54,1,"One cosine score after concatenating visual, texture, and flavor."
+whole_text_one_score,extra_trees,0,0.05121428408773432,1.8100356861794569,2.220615839369902,186,54,1,"One cosine score after concatenating visual, texture, and flavor."
+whole_text_one_score,svr_rbf,0,0.13692362341688835,1.6790869324988966,2.1179415926183376,186,54,1,"One cosine score after concatenating visual, texture, and flavor."
+dummy_mean,dummy,1,-0.20817486265382268,2.046881720430108,2.4142582167444253,186,54,1,Mean-only baseline.
+whole_text_one_score,ridge,1,-0.10072745877633182,1.9571300904733666,2.3044045319904916,186,54,1,"One cosine score after concatenating visual, texture, and flavor."
+whole_text_one_score,hist_gbr,1,-0.45842391491690626,2.2448275337591044,2.6525324707596294,186,54,1,"One cosine score after concatenating visual, texture, and flavor."
+whole_text_one_score,gbr,1,-0.3424748917818947,2.1607926165204763,2.5449069416612633,186,54,1,"One cosine score after concatenating visual, texture, and flavor."
+whole_text_one_score,extra_trees,1,-0.12153501021342028,1.9866381072077157,2.326083164486239,186,54,1,"One cosine score after concatenating visual, texture, and flavor."
+whole_text_one_score,svr_rbf,1,0.0010756343306874694,1.8462605169510817,2.195255751500766,186,54,1,"One cosine score after concatenating visual, texture, and flavor."
+dummy_mean,dummy,2,-0.012442168197676962,1.8130702291947538,2.2094418021895867,199,41,1,Mean-only baseline.
+whole_text_one_score,ridge,2,0.06582084655367892,1.710010121607063,2.122328175599038,199,41,1,"One cosine score after concatenating visual, texture, and flavor."
+whole_text_one_score,hist_gbr,2,0.21029868785646388,1.5248273271174206,1.9513217426570506,199,41,1,"One cosine score after concatenating visual, texture, and flavor."
+whole_text_one_score,gbr,2,-0.4387918413430698,1.9757393234060323,2.6338827448941253,199,41,1,"One cosine score after concatenating visual, texture, and flavor."
+whole_text_one_score,extra_trees,2,0.12908231670677583,1.640544694912313,2.0492078374772347,199,41,1,"One cosine score after concatenating visual, texture, and flavor."
+whole_text_one_score,svr_rbf,2,0.08707074497751799,1.642802138173398,2.0980508799530893,199,41,1,"One cosine score after concatenating visual, texture, and flavor."
+dummy_mean,dummy,3,-0.14439398964586725,1.843726160291037,2.228841939857149,193,47,1,Mean-only baseline.
+whole_text_one_score,ridge,3,-0.0463743844811455,1.676132549377011,2.131253143228502,193,47,1,"One cosine score after concatenating visual, texture, and flavor."
+whole_text_one_score,hist_gbr,3,-0.09941920378948499,1.6868186189350725,2.18460612229681,193,47,1,"One cosine score after concatenating visual, texture, and flavor."
+whole_text_one_score,gbr,3,-0.2819399991877709,1.8273508538804775,2.3589858531693,193,47,1,"One cosine score after concatenating visual, texture, and flavor."
+whole_text_one_score,extra_trees,3,-0.06216869675530701,1.6934246141759086,2.147277810332439,193,47,1,"One cosine score after concatenating visual, texture, and flavor."
+whole_text_one_score,svr_rbf,3,-0.15040157607001503,1.7548165510109537,2.2346845228144048,193,47,1,"One cosine score after concatenating visual, texture, and flavor."
+dummy_mean,dummy,4,-0.011518952019928808,1.9648222996515678,2.4658156919019407,205,35,1,Mean-only baseline.
+whole_text_one_score,ridge,4,-0.08725209782756904,2.0260820146132974,2.5564583823061504,205,35,1,"One cosine score after concatenating visual, texture, and flavor."
+whole_text_one_score,hist_gbr,4,-0.15217448812615064,2.031818698674016,2.6316778626061192,205,35,1,"One cosine score after concatenating visual, texture, and flavor."
+whole_text_one_score,gbr,4,-0.10270380849584848,2.00205221387091,2.574560116641198,205,35,1,"One cosine score after concatenating visual, texture, and flavor."
+whole_text_one_score,extra_trees,4,-0.011106256288429428,1.9449954038297659,2.4653126190592234,205,35,1,"One cosine score after concatenating visual, texture, and flavor."
+whole_text_one_score,svr_rbf,4,-0.0026104566584315148,1.9016816362803812,2.454933400855094,205,35,1,"One cosine score after concatenating visual, texture, and flavor."
+three_modality_scores_raw_sts,ridge,0,0.08649522741774507,1.8044973871438206,2.178937507417641,186,54,3,Three STS cosine scores from the full comments in each modality.
+three_modality_scores_raw_sts,hist_gbr,0,-0.14107049107550118,1.8691428086666884,2.4352614926295946,186,54,3,Three STS cosine scores from the full comments in each modality.
+three_modality_scores_raw_sts,gbr,0,0.021836791049520854,1.769516145227696,2.254732507878015,186,54,3,Three STS cosine scores from the full comments in each modality.
+three_modality_scores_raw_sts,extra_trees,0,0.0618443143304338,1.7982627677036171,2.2081411028161124,186,54,3,Three STS cosine scores from the full comments in each modality.
+three_modality_scores_raw_sts,svr_rbf,0,-0.045152169199840664,1.9018768046813936,2.33066109955826,186,54,3,Three STS cosine scores from the full comments in each modality.
+three_modality_scores_raw_sts,ridge,1,-0.09260895716712647,1.9573605538052763,2.295890646145801,186,54,3,Three STS cosine scores from the full comments in each modality.
+three_modality_scores_raw_sts,hist_gbr,1,-0.22577839221681728,2.030598165905356,2.431782904942648,186,54,3,Three STS cosine scores from the full comments in each modality.
+three_modality_scores_raw_sts,gbr,1,-0.001405976648418017,1.8666191685573323,2.1979808785008137,186,54,3,Three STS cosine scores from the full comments in each modality.
+three_modality_scores_raw_sts,extra_trees,1,-0.024588007859345673,1.9209996828225326,2.223276382733338,186,54,3,Three STS cosine scores from the full comments in each modality.
+three_modality_scores_raw_sts,svr_rbf,1,0.15659421792358352,1.795723944509912,2.0171449505978605,186,54,3,Three STS cosine scores from the full comments in each modality.
+three_modality_scores_raw_sts,ridge,2,-0.041603222283498775,1.8408111359000792,2.2410348553793398,199,41,3,Three STS cosine scores from the full comments in each modality.
+three_modality_scores_raw_sts,hist_gbr,2,-0.09239882398773513,1.6819816072827125,2.2950284092663407,199,41,3,Three STS cosine scores from the full comments in each modality.
+three_modality_scores_raw_sts,gbr,2,-0.21585468336658775,1.9383309888360267,2.421242507985923,199,41,3,Three STS cosine scores from the full comments in each modality.
+three_modality_scores_raw_sts,extra_trees,2,0.1059619276488385,1.6361437167256034,2.0762299936025292,199,41,3,Three STS cosine scores from the full comments in each modality.
+three_modality_scores_raw_sts,svr_rbf,2,0.043246925279118,1.7144431973699996,2.147817552402423,199,41,3,Three STS cosine scores from the full comments in each modality.
+three_modality_scores_raw_sts,ridge,3,-0.07055492531407537,1.742274556191663,2.155737934430441,193,47,3,Three STS cosine scores from the full comments in each modality.
+three_modality_scores_raw_sts,hist_gbr,3,-0.2100900998485431,1.7153273162526412,2.2919246790261987,193,47,3,Three STS cosine scores from the full comments in each modality.
+three_modality_scores_raw_sts,gbr,3,-0.1141213676889199,1.6582855343302982,2.199164614590222,193,47,3,Three STS cosine scores from the full comments in each modality.
+three_modality_scores_raw_sts,extra_trees,3,-0.047221791117456835,1.6447488874938974,2.132115966600744,193,47,3,Three STS cosine scores from the full comments in each modality.
+three_modality_scores_raw_sts,svr_rbf,3,-0.18858947496446143,1.732137983118611,2.2714722066492206,193,47,3,Three STS cosine scores from the full comments in each modality.
+three_modality_scores_raw_sts,ridge,4,-0.07871575677852571,2.02978767617121,2.5464028468940354,205,35,3,Three STS cosine scores from the full comments in each modality.
+three_modality_scores_raw_sts,hist_gbr,4,-0.49875089803206096,2.2945228080896327,3.0014998643730912,205,35,3,Three STS cosine scores from the full comments in each modality.
+three_modality_scores_raw_sts,gbr,4,-0.3610979890537378,2.212498255832754,2.860344192751147,205,35,3,Three STS cosine scores from the full comments in each modality.
+three_modality_scores_raw_sts,extra_trees,4,-0.09952510274106285,2.0299843356046314,2.5708466646512833,205,35,3,Three STS cosine scores from the full comments in each modality.
+three_modality_scores_raw_sts,svr_rbf,4,-0.3116494308850053,2.293882095431699,2.8079054996426787,205,35,3,Three STS cosine scores from the full comments in each modality.
+three_modality_scores_tagged_sts,ridge,0,0.10764359397437262,1.7922444804539057,2.153567741474256,186,54,3,Three STS cosine scores with each comment labeled by modality.
+three_modality_scores_tagged_sts,hist_gbr,0,-0.1287273374029918,1.9765399174124612,2.422054360587264,186,54,3,Three STS cosine scores with each comment labeled by modality.
+three_modality_scores_tagged_sts,gbr,0,0.012342871772178077,1.8196720516059703,2.265648149174516,186,54,3,Three STS cosine scores with each comment labeled by modality.
+three_modality_scores_tagged_sts,extra_trees,0,0.1025972201071148,1.7558731844941111,2.159648488285753,186,54,3,Three STS cosine scores with each comment labeled by modality.
+three_modality_scores_tagged_sts,svr_rbf,0,-0.07671201315112652,1.9479937492251747,2.36558819198071,186,54,3,Three STS cosine scores with each comment labeled by modality.
+three_modality_scores_tagged_sts,ridge,1,-0.13229111661290194,1.9929120860625953,2.337210724471297,186,54,3,Three STS cosine scores with each comment labeled by modality.
+three_modality_scores_tagged_sts,hist_gbr,1,-0.3113771589047838,2.1776722986308035,2.515258514989812,186,54,3,Three STS cosine scores with each comment labeled by modality.
+three_modality_scores_tagged_sts,gbr,1,-0.07344929030998171,1.9625593677098034,2.2756715862847097,186,54,3,Three STS cosine scores with each comment labeled by modality.
+three_modality_scores_tagged_sts,extra_trees,1,-0.021814940626103008,1.9358854226295898,2.220265673981452,186,54,3,Three STS cosine scores with each comment labeled by modality.
+three_modality_scores_tagged_sts,svr_rbf,1,-0.0579083301146468,1.9953345318718334,2.2591384062872497,186,54,3,Three STS cosine scores with each comment labeled by modality.
+three_modality_scores_tagged_sts,ridge,2,-0.06573821186203488,1.8480546739423689,2.266849683605046,199,41,3,Three STS cosine scores with each comment labeled by modality.
+three_modality_scores_tagged_sts,hist_gbr,2,0.1495328036741339,1.5525328223462238,2.025005641099762,199,41,3,Three STS cosine scores with each comment labeled by modality.
+three_modality_scores_tagged_sts,gbr,2,0.0335787552785356,1.785683967536392,2.1586423249771927,199,41,3,Three STS cosine scores with each comment labeled by modality.
+three_modality_scores_tagged_sts,extra_trees,2,0.1184532903785146,1.6234378566467158,2.0616745898918896,199,41,3,Three STS cosine scores with each comment labeled by modality.
+three_modality_scores_tagged_sts,svr_rbf,2,0.037606903781553624,1.7158786067455023,2.154138899787947,199,41,3,Three STS cosine scores with each comment labeled by modality.
+three_modality_scores_tagged_sts,ridge,3,-0.07642250935686468,1.7538552430720697,2.161637533162553,193,47,3,Three STS cosine scores with each comment labeled by modality.
+three_modality_scores_tagged_sts,hist_gbr,3,-0.23021629104541264,1.8173215838061207,2.31090570123947,193,47,3,Three STS cosine scores with each comment labeled by modality.
+three_modality_scores_tagged_sts,gbr,3,-0.19516472379638672,1.7994126069092056,2.277746406666631,193,47,3,Three STS cosine scores with each comment labeled by modality.
+three_modality_scores_tagged_sts,extra_trees,3,-0.060579905501402465,1.6976912728659102,2.145671260954458,193,47,3,Three STS cosine scores with each comment labeled by modality.
+three_modality_scores_tagged_sts,svr_rbf,3,-0.2586602000292997,1.9010723559659362,2.3374683382483643,193,47,3,Three STS cosine scores with each comment labeled by modality.
+three_modality_scores_tagged_sts,ridge,4,-0.10448356635608458,2.0772412429529106,2.576636941891567,205,35,3,Three STS cosine scores with each comment labeled by modality.
+three_modality_scores_tagged_sts,hist_gbr,4,-0.3781926917073466,2.2732829776972663,2.8782503835307534,205,35,3,Three STS cosine scores with each comment labeled by modality.
+three_modality_scores_tagged_sts,gbr,4,-0.1084419600456692,2.064576111527964,2.581250057750925,205,35,3,Three STS cosine scores with each comment labeled by modality.
+three_modality_scores_tagged_sts,extra_trees,4,-0.05326276696631749,1.987192237947536,2.516181505910346,205,35,3,Three STS cosine scores with each comment labeled by modality.
+three_modality_scores_tagged_sts,svr_rbf,4,-0.2374089284119727,2.190666677025039,2.7272831077323576,205,35,3,Three STS cosine scores with each comment labeled by modality.
+three_modality_scores_qa_sts,ridge,0,0.14353476952634014,1.7380050786193482,2.109814305922981,186,54,3,Three STS cosine scores using Q+A framing to focus the modality.
+three_modality_scores_qa_sts,hist_gbr,0,0.17371152339054374,1.7557312169827382,2.0723123370156435,186,54,3,Three STS cosine scores using Q+A framing to focus the modality.
+three_modality_scores_qa_sts,gbr,0,0.14035076069554897,1.7815082035790548,2.1137324074956534,186,54,3,Three STS cosine scores using Q+A framing to focus the modality.
+three_modality_scores_qa_sts,extra_trees,0,0.2445476450753189,1.6338859228676652,1.9814946499299022,186,54,3,Three STS cosine scores using Q+A framing to focus the modality.
+three_modality_scores_qa_sts,svr_rbf,0,0.26718467352913533,1.585093259254057,1.951581247172084,186,54,3,Three STS cosine scores using Q+A framing to focus the modality.
+three_modality_scores_qa_sts,ridge,1,-0.0805527737662195,1.9356836169667144,2.2831887278439065,186,54,3,Three STS cosine scores using Q+A framing to focus the modality.
+three_modality_scores_qa_sts,hist_gbr,1,0.18783052288151336,1.6731221807006198,1.9794391349101188,186,54,3,Three STS cosine scores using Q+A framing to focus the modality.
+three_modality_scores_qa_sts,gbr,1,0.2657618719039462,1.5742296490921392,1.8820765646961701,186,54,3,Three STS cosine scores using Q+A framing to focus the modality.
+three_modality_scores_qa_sts,extra_trees,1,0.16316660167848962,1.7238163923951115,2.00927010562344,186,54,3,Three STS cosine scores using Q+A framing to focus the modality.
+three_modality_scores_qa_sts,svr_rbf,1,0.321574207240227,1.4709301673898225,1.8091309181184725,186,54,3,Three STS cosine scores using Q+A framing to focus the modality.
+three_modality_scores_qa_sts,ridge,2,-0.1685752733992847,1.8875648357953414,2.3736998381906695,199,41,3,Three STS cosine scores using Q+A framing to focus the modality.
+three_modality_scores_qa_sts,hist_gbr,2,0.14074143403677242,1.7002623235710932,2.035445081137435,199,41,3,Three STS cosine scores using Q+A framing to focus the modality.
+three_modality_scores_qa_sts,gbr,2,0.22982056753961244,1.609563624098278,1.9270519038166598,199,41,3,Three STS cosine scores using Q+A framing to focus the modality.
+three_modality_scores_qa_sts,extra_trees,2,0.266158223341438,1.5110999654541595,1.8810427677933619,199,41,3,Three STS cosine scores using Q+A framing to focus the modality.
+three_modality_scores_qa_sts,svr_rbf,2,0.20939111831248658,1.5648004827841635,1.9524427054990199,199,41,3,Three STS cosine scores using Q+A framing to focus the modality.
+three_modality_scores_qa_sts,ridge,3,0.009856392383403079,1.6546601286139337,2.0731970448152746,193,47,3,Three STS cosine scores using Q+A framing to focus the modality.
+three_modality_scores_qa_sts,hist_gbr,3,-0.2873481068860648,1.921408277245976,2.363956531486905,193,47,3,Three STS cosine scores using Q+A framing to focus the modality.
+three_modality_scores_qa_sts,gbr,3,0.013507814690375874,1.659897628129035,2.0693707765897575,193,47,3,Three STS cosine scores using Q+A framing to focus the modality.
+three_modality_scores_qa_sts,extra_trees,3,0.06949945706388172,1.6095312755691662,2.0097859347844076,193,47,3,Three STS cosine scores using Q+A framing to focus the modality.
+three_modality_scores_qa_sts,svr_rbf,3,-0.07571967778704503,1.7036816713525684,2.160931715900542,193,47,3,Three STS cosine scores using Q+A framing to focus the modality.
+three_modality_scores_qa_sts,ridge,4,-0.16628184545083213,2.111149015359291,2.6477401287776434,205,35,3,Three STS cosine scores using Q+A framing to focus the modality.
+three_modality_scores_qa_sts,hist_gbr,4,-0.14594209882199483,2.117547782828519,2.624550521465059,205,35,3,Three STS cosine scores using Q+A framing to focus the modality.
+three_modality_scores_qa_sts,gbr,4,-0.05918341234553215,2.0247537591689597,2.523243628491937,205,35,3,Three STS cosine scores using Q+A framing to focus the modality.
+three_modality_scores_qa_sts,extra_trees,4,-0.007048799964411767,1.9646376900084306,2.4603611347180934,205,35,3,Three STS cosine scores using Q+A framing to focus the modality.
+three_modality_scores_qa_sts,svr_rbf,4,-0.06600783532505572,2.0659921503928325,2.531359330443375,205,35,3,Three STS cosine scores using Q+A framing to focus the modality.
+three_modality_scores_retrieval_doc,ridge,0,0.1389346226616026,1.7428380439748064,2.1154727132910245,186,54,3,Three cosine scores using Retrieval-document embeddings.
+three_modality_scores_retrieval_doc,hist_gbr,0,-0.028890018158408637,1.926258060847306,2.312457934732539,186,54,3,Three cosine scores using Retrieval-document embeddings.
+three_modality_scores_retrieval_doc,gbr,0,0.10659936767097078,1.7567793007534067,2.154827414496754,186,54,3,Three cosine scores using Retrieval-document embeddings.
+three_modality_scores_retrieval_doc,extra_trees,0,0.0842023946175301,1.7826156251169805,2.1816702837534887,186,54,3,Three cosine scores using Retrieval-document embeddings.
+three_modality_scores_retrieval_doc,svr_rbf,0,-0.013662151101550224,1.8574719339842307,2.295281624255128,186,54,3,Three cosine scores using Retrieval-document embeddings.
+three_modality_scores_retrieval_doc,ridge,1,-0.08068511917008547,1.9404861097931063,2.2833285453011416,186,54,3,Three cosine scores using Retrieval-document embeddings.
+three_modality_scores_retrieval_doc,hist_gbr,1,0.1308907282471503,1.7317946250245677,2.047651349461026,186,54,3,Three cosine scores using Retrieval-document embeddings.
+three_modality_scores_retrieval_doc,gbr,1,0.05111800045431436,1.7803008630532273,2.1395622389138422,186,54,3,Three cosine scores using Retrieval-document embeddings.
+three_modality_scores_retrieval_doc,extra_trees,1,-0.014882381679657719,1.918561297132509,2.212721099048303,186,54,3,Three cosine scores using Retrieval-document embeddings.
+three_modality_scores_retrieval_doc,svr_rbf,1,-0.03748299809925948,1.9195583421941331,2.237223201432187,186,54,3,Three cosine scores using Retrieval-document embeddings.
+three_modality_scores_retrieval_doc,ridge,2,0.04564839546603405,1.7452112978872167,2.145120325372077,199,41,3,Three cosine scores using Retrieval-document embeddings.
+three_modality_scores_retrieval_doc,hist_gbr,2,-0.14862595953308566,1.8106142747018308,2.353351330360434,199,41,3,Three cosine scores using Retrieval-document embeddings.
+three_modality_scores_retrieval_doc,gbr,2,-0.24061995430889516,1.8239970639366905,2.4457768782603297,199,41,3,Three cosine scores using Retrieval-document embeddings.
+three_modality_scores_retrieval_doc,extra_trees,2,0.09889863950058664,1.6431773628359079,2.08441541659004,199,41,3,Three cosine scores using Retrieval-document embeddings.
+three_modality_scores_retrieval_doc,svr_rbf,2,-0.08452837935554003,1.7885232117666718,2.2867459276521496,199,41,3,Three cosine scores using Retrieval-document embeddings.
+three_modality_scores_retrieval_doc,ridge,3,-0.07619170432616862,1.7649066022753952,2.1614057730683567,193,47,3,Three cosine scores using Retrieval-document embeddings.
+three_modality_scores_retrieval_doc,hist_gbr,3,-0.3282426145248005,1.79931215357743,2.401210269033607,193,47,3,Three cosine scores using Retrieval-document embeddings.
+three_modality_scores_retrieval_doc,gbr,3,-0.17923919635414665,1.6562018210545357,2.262520069026398,193,47,3,Three cosine scores using Retrieval-document embeddings.
+three_modality_scores_retrieval_doc,extra_trees,3,-0.099402131241217,1.7527894373740436,2.1845891601871186,193,47,3,Three cosine scores using Retrieval-document embeddings.
+three_modality_scores_retrieval_doc,svr_rbf,3,-0.5072690225248935,2.0139335296533587,2.5579195069839114,193,47,3,Three cosine scores using Retrieval-document embeddings.
+three_modality_scores_retrieval_doc,ridge,4,-0.039074013696248855,1.9929106042096922,2.499176000628533,205,35,3,Three cosine scores using Retrieval-document embeddings.
+three_modality_scores_retrieval_doc,hist_gbr,4,-0.12617295699818176,1.9812214219300635,2.60181340589885,205,35,3,Three cosine scores using Retrieval-document embeddings.
+three_modality_scores_retrieval_doc,gbr,4,0.047549794680792457,1.852861350006456,2.392735757298898,205,35,3,Three cosine scores using Retrieval-document embeddings.
+three_modality_scores_retrieval_doc,extra_trees,4,0.026893876635672,1.8531842590264915,2.418542383858869,205,35,3,Three cosine scores using Retrieval-document embeddings.
+three_modality_scores_retrieval_doc,svr_rbf,4,-0.17461258872020413,2.063429138811322,2.657179696922378,205,35,3,Three cosine scores using Retrieval-document embeddings.

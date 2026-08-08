@@ -1,0 +1,64 @@
+{
+  "artifact_contract_version": "tabular_v1",
+  "artifact_dir": "data/embedding_baselines/tabpfn_local_outputs/tagged_sts_seed42_artifacts",
+  "artifacts": {
+    "metrics_json": "data/embedding_baselines/tabpfn_local_outputs/tagged_sts_seed42_artifacts/metrics.json",
+    "predictions_csv": "data/embedding_baselines/tabpfn_local_outputs/tagged_sts_seed42_artifacts/predictions.csv"
+  },
+  "csv": "data/embedding_baselines/tabpfn_inputs/three_modality_scores_tagged_sts_seed42.csv",
+  "device": "mps",
+  "elapsed_seconds": 18.099,
+  "engine": "tabpfn",
+  "estimator": "regressor",
+  "feature_count": 3,
+  "feature_names": [
+    "visual_similarity",
+    "texture_similarity",
+    "flavor_similarity"
+  ],
+  "feature_types": {},
+  "features": 3,
+  "hostname": "Johns-MacBook-Pro.local",
+  "mae": 1.8037160190090726,
+  "metrics": {
+    "mae": 1.8037160190090726,
+    "r2": 0.10759129868883133,
+    "rmse": 2.243674438283647
+  },
+  "model": "v2",
+  "model_version": "ModelVersion.V2",
+  "mps_available": true,
+  "node_label": "Johns-MacBook-Pro.local",
+  "package_versions": {
+    "pandas": "2.3.3",
+    "python": "3.9.6",
+    "scikit-learn": "1.6.1",
+    "tabpfn": "7.1.1",
+    "torch": "2.8.0"
+  },
+  "platform": "arm64",
+  "prediction_batch_size": 64,
+  "python": "3.9.6",
+  "r2": 0.10759129868883133,
+  "rmse": 2.243674438283647,
+  "rows": 2758,
+  "split": {
+    "random_state": 42,
+    "split_column": "split",
+    "strategy": "explicit_column",
+    "test_rows": 551,
+    "test_size": 0.1997824510514866,
+    "test_split_value": "holdout",
+    "train_rows": 2207,
+    "train_split_value": "train"
+  },
+  "split_column": "split",
+  "tabpfn_package": "7.1.1",
+  "target": "liking",
+  "task": "regression",
+  "test_rows": 551,
+  "test_split_value": "holdout",
+  "torch_package": "2.8.0",
+  "train_rows": 2207,
+  "train_split_value": "train"
+}

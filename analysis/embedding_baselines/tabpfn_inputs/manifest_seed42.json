@@ -1,0 +1,36 @@
+{
+  "consumers": 483,
+  "feature_columns": [
+    "visual_similarity",
+    "texture_similarity",
+    "flavor_similarity"
+  ],
+  "files": [
+    {
+      "description": "Three STS cosine scores from the full comments in each modality.",
+      "feature_set": "three_modality_scores_raw_sts",
+      "path": "analysis/embedding_baselines/tabpfn_inputs/three_modality_scores_raw_sts_seed42.csv"
+    },
+    {
+      "description": "Three STS cosine scores with each comment labeled by modality.",
+      "feature_set": "three_modality_scores_tagged_sts",
+      "path": "analysis/embedding_baselines/tabpfn_inputs/three_modality_scores_tagged_sts_seed42.csv"
+    },
+    {
+      "description": "Three STS cosine scores using Q+A framing to focus the modality.",
+      "feature_set": "three_modality_scores_qa_sts",
+      "path": "analysis/embedding_baselines/tabpfn_inputs/three_modality_scores_qa_sts_seed42.csv"
+    },
+    {
+      "description": "Three cosine scores using Retrieval-document embeddings.",
+      "feature_set": "three_modality_scores_retrieval_doc",
+      "path": "analysis/embedding_baselines/tabpfn_inputs/three_modality_scores_retrieval_doc_seed42.csv"
+    }
+  ],
+  "holdout_consumers": 97,
+  "holdout_rows": 551,
+  "model_id": "google/embeddinggemma-300m",
+  "random_state": 42,
+  "rows": 2758,
+  "test_size": 0.2
+}

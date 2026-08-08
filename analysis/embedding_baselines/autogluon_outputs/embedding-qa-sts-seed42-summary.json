@@ -1,0 +1,133 @@
+{
+  "csv": "data/embedding_baselines/tabpfn_inputs/three_modality_scores_qa_sts_seed42.csv",
+  "elapsed_seconds": 246.195,
+  "node_names": [
+    "mini2-v2"
+  ],
+  "results": [
+    {
+      "artifact_contract_version": "tabular_v1",
+      "artifact_dir": "data/embedding_baselines/autogluon_outputs/embedding-qa-sts-seed42-mini2-v2-artifacts",
+      "artifacts": {
+        "leaderboard_csv": "data/embedding_baselines/autogluon_outputs/embedding-qa-sts-seed42-mini2-v2-artifacts/leaderboard.csv",
+        "metrics_json": "data/embedding_baselines/autogluon_outputs/embedding-qa-sts-seed42-mini2-v2-artifacts/metrics.json",
+        "predictions_csv": "data/embedding_baselines/autogluon_outputs/embedding-qa-sts-seed42-mini2-v2-artifacts/predictions.csv"
+      },
+      "elapsed_seconds": 0.994,
+      "engine": "autogluon",
+      "evaluation": {
+        "mean_absolute_error": -1.8302006329295855,
+        "mean_squared_error": -5.288139452755416,
+        "median_absolute_error": -1.506821002960205,
+        "pearsonr": 0.3133704520478815,
+        "r2": 0.06255237050688445,
+        "root_mean_squared_error": -2.299595497637664
+      },
+      "feature_count": 3,
+      "feature_names": [
+        "visual_similarity",
+        "texture_similarity",
+        "flavor_similarity"
+      ],
+      "feature_types": {
+        "flavor_similarity": "continuous",
+        "texture_similarity": "continuous",
+        "visual_similarity": "continuous"
+      },
+      "features": [
+        "visual_similarity",
+        "texture_similarity",
+        "flavor_similarity"
+      ],
+      "hostname": "amm-02.local",
+      "leaderboard": [
+        {
+          "can_infer": true,
+          "eval_metric": "root_mean_squared_error",
+          "fit_order": 3,
+          "fit_time": 0.5315139293670654,
+          "fit_time_marginal": 0.0012340545654296875,
+          "model": "WeightedEnsemble_L2",
+          "pred_time_test": 0.06159615516662598,
+          "pred_time_test_marginal": 0.0063021183013916016,
+          "pred_time_val": 0.032807111740112305,
+          "pred_time_val_marginal": 0.00010514259338378906,
+          "score_test": -2.299595497637664,
+          "score_val": -2.4126346403113144,
+          "stack_level": 2
+        },
+        {
+          "can_infer": true,
+          "eval_metric": "root_mean_squared_error",
+          "fit_order": 2,
+          "fit_time": 0.13944482803344727,
+          "fit_time_marginal": 0.13944482803344727,
+          "model": "ExtraTreesMSE",
+          "pred_time_test": 0.031314849853515625,
+          "pred_time_test_marginal": 0.031314849853515625,
+          "pred_time_val": 0.016338825225830078,
+          "pred_time_val_marginal": 0.016338825225830078,
+          "score_test": -2.3037205372141285,
+          "score_val": -2.414563315132305,
+          "stack_level": 1
+        },
+        {
+          "can_infer": true,
+          "eval_metric": "root_mean_squared_error",
+          "fit_order": 1,
+          "fit_time": 0.3908350467681885,
+          "fit_time_marginal": 0.3908350467681885,
+          "model": "RandomForestMSE",
+          "pred_time_test": 0.02397918701171875,
+          "pred_time_test_marginal": 0.02397918701171875,
+          "pred_time_val": 0.016363143920898438,
+          "pred_time_val_marginal": 0.016363143920898438,
+          "score_test": -2.305743651057982,
+          "score_val": -2.426778134819835,
+          "stack_level": 1
+        }
+      ],
+      "metrics": {
+        "mean_absolute_error": -1.8302006329295855,
+        "mean_squared_error": -5.288139452755416,
+        "median_absolute_error": -1.506821002960205,
+        "pearsonr": 0.3133704520478815,
+        "r2": 0.06255237050688445,
+        "root_mean_squared_error": -2.299595497637664
+      },
+      "model_dir": "<local-path>",
+      "model_dir_bytes": 96489087,
+      "node_label": "mini2-v2",
+      "node_name": "mini2-v2",
+      "output_json": "data/embedding_baselines/autogluon_outputs/embedding-qa-sts-seed42-mini2-v2.json",
+      "output_log": "data/embedding_baselines/autogluon_outputs/embedding-qa-sts-seed42-mini2-v2.log",
+      "package_versions": {
+        "autogluon.tabular": "1.5.0",
+        "pandas": "2.3.3",
+        "python": "3.12.13",
+        "scikit-learn": "1.7.2"
+      },
+      "requested_task": "regression",
+      "rows": 2758,
+      "split": {
+        "random_state": 42,
+        "split_column": "split",
+        "strategy": "explicit_column",
+        "test_rows": 551,
+        "test_size": 0.1997824510514866,
+        "test_split_value": "holdout",
+        "train_rows": 2207,
+        "train_split_value": "train"
+      },
+      "target": "liking",
+      "task": "regression",
+      "test_rows": 551,
+      "time_limit": 90,
+      "train_rows": 2207
+    }
+  ],
+  "run_id": "embedding-qa-sts-seed42",
+  "selection": "v2",
+  "summary_json": "data/embedding_baselines/autogluon_outputs/embedding-qa-sts-seed42-summary.json",
+  "target": "liking"
+}

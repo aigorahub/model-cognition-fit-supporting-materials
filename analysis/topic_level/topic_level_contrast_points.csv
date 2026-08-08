@@ -1,0 +1,18 @@
+topic,label,modality,mahieu_mean_abs_loading,mahieu_signed_mean_loading,mahieu_strength_norm,our_abs_rho,our_signed_rho,our_strength_norm,descriptor_family,mahieu_rank,our_rank,rank_delta
+offnote_aftertaste_match,Off-notes and aftertaste,Flavor,1.6,-1.6,1.0,0.6574629027444978,0.6574629027444978,0.9791272713556154,F_insipid,1,3,2
+bland_insipid_intensity_match,Blandness and intensity,Flavor,1.6,-1.6,1.0,0.6262677660313212,0.6262677660313212,0.9326698834755756,F_insipid,1,4,3
+fibrous_stringy_pieces_match,Fibrous pieces,Texture,0.8,-0.8,0.5,0.5504752679741429,0.5504752679741429,0.8197958315676,"T_fibrous_stringy, T_hard_pieces",3,6,3
+overall_texture_match,Overall texture match,Texture,0.7437499999999999,-0.5937499999999999,0.46484374999999994,0.5537122013096453,0.5537122013096453,0.8246164377054069,"T_soft_tender_melting, T_juicy, T_firm_hearty, T_fibrous_stringy, T_hard_pieces, T_dry_pasty, T_fat, T_elastic_rubbery",4,5,1
+firmness_rubberiness_match,Firmness and rubberiness,Texture,0.725,-0.725,0.45312499999999994,0.4852131238718374,0.4852131238718374,0.7226041195927267,"T_firm_hearty, T_elastic_rubbery",5,10,5
+overall_flavor_match,Overall flavor match,Flavor,0.7071428571428572,0.14999999999999997,0.4419642857142857,0.6676321669218812,0.6676321669218812,0.9942718579842016,"F_fragrant, F_smoked, F_ham_taste, F_not_salty, F_spicy_stock_aromatics, F_salty, F_insipid",6,2,-4
+dryness_juiciness_match,Dryness and juiciness,Texture,0.65,-0.45000000000000007,0.40625,0.4940717876008914,0.4940717876008914,0.7357968932209847,"T_dry_pasty, T_juicy",7,8,1
+aromatic_smoky_spiced_match,Smoky and spiced notes,Flavor,0.6333333333333334,0.6333333333333334,0.39583333333333337,0.48976803547866143,0.48976803547866143,0.7293875261609736,"F_fragrant, F_smoked, F_spicy_stock_aromatics",8,9,1
+ham_taste_match,Ham taste,Flavor,0.6,0.6,0.37499999999999994,0.6714784910793377,0.6714784910793377,1.0,F_ham_taste,9,1,-8
+surface_moisture_shine_match,Moisture and shine,Visual,0.4666666666666666,-0.4666666666666666,0.29166666666666663,0.46077291417965693,0.46077291417965693,0.6862065133895926,"V_wet, V_bright, V_dull",10,14,4
+slice_structure_homogeneity_match,Slice structure,Visual,0.44999999999999996,-0.44999999999999996,0.28124999999999994,0.4747786010307919,0.4747786010307919,0.7070644962396794,"V_homogeneous, V_heterogeneous, V_veined_fibrous, V_no_rind",11,12,1
+color_pinkness_match,Color and pinkness,Visual,0.425,-0.4,0.265625,0.3057796312305783,0.3057796312305783,0.4553826150694219,"V_pink, V_pale, V_no_color, V_grey, V_white, V_deep_dark, V_light, V_beige_brown",12,17,5
+saltiness_match,Saltiness,Flavor,0.425,0.07500000000000001,0.265625,0.47216410041752366,0.47216410041752366,0.7031708486426198,"F_not_salty, F_salty",12,13,1
+tenderness_softness_match,Tenderness and softness,Texture,0.4,0.4,0.25,0.5152661423396465,0.5152661423396465,0.7673606067580889,T_soft_tender_melting,14,7,-7
+overall_visual_match,Overall visual match,Visual,0.3842105263157895,-0.3526315789473684,0.24013157894736842,0.4851429028412896,0.4851429028412896,0.7224995428542598,"V_not_fat, V_pink, V_marbled, V_natural, V_beige_brown, V_light, V_bright, V_no_rind, V_homogeneous, V_grey, V_white, V_heterogeneous, V_dull, V_deep_dark, V_fat, V_pale, V_wet, V_veined_fibrous, V_no_color",15,11,-4
+fat_lean_appearance_match,Fat and lean appearance,Visual,0.23333333333333336,-0.09999999999999999,0.14583333333333334,0.43022605420134785,0.43022605420134785,0.6407145722714074,"V_fat, V_not_fat, V_marbled",16,16,0
+thickness_chew_match,Thickness and chew,Texture,0.05,-0.05,0.03125,0.45153695115657255,0.45153695115657255,0.6724518464184459,T_firm_hearty,17,15,-2
