@@ -341,9 +341,9 @@ terms they are:
 \end{enumerate}
 
 Those three cells match the product stack available when the experiments were
-first run and the main pattern was discovered (notebook and grid dated 15
-January 2026). At that time, thinking-enabled Flash scoring was already
-available on Gemini 3 Flash (\texttt{gemini-3-flash-preview}) with an explicit
+first run and the primary contrast emerged (notebook and grid dated 15 January
+2026). At that time, thinking-enabled Flash scoring was already available on
+Gemini 3 Flash (\texttt{gemini-3-flash-preview}) with an explicit
 \texttt{thinkingLevel} control, but a Gemini 3 Flash Lite direct-response
 path was not yet available. The ordinary fast non-thinking Lite path was
 still Gemini 2.5 Flash Lite (\texttt{gemini-flash-lite-latest}), so we used
@@ -358,10 +358,12 @@ gradient. The headline contrast between direct-response and thinking also
 changes generation (2.5 Flash Lite versus Gemini 3 Flash), because that is
 what the stack offered for fast Lite non-thinking versus thinking-capable
 Flash when the experiments began. That is a real confound for attributing the
-gap to thinking alone. It also makes the main pattern harder to dismiss as a
-weak-model artifact: the thinking cells used the newer generation, and they
-still did not close the gap to the older Lite direct-response setup on this
-task. For auditability the archive stores the API aliases used at call time.
+gap to thinking alone. It also makes the result harder to dismiss as a
+weak-model artifact, and more surprising: the thinking cells used the newer,
+more capable generation, so any intelligence advantage favored the thinking
+arm, yet that arm still did not close the gap to the older Lite
+direct-response setup on this task. For auditability the archive stores the
+API aliases used at call time.
 The provider did not return a separate immutable model revision identifier in
 the saved response metadata. What matters for audit is the setting used
 (direct-response versus thinking level), temperature, scoring date, and the
@@ -1007,11 +1009,12 @@ model generation (Gemini 2.5 Flash Lite versus Gemini 3 Flash). That pairing
 is what was available when the experiments were first run: thinking on Gemini
 3 Flash, but no Gemini 3 Flash Lite for a matched-generation direct-response
 arm (Section~\ref{sec:models}). The confound works against the
-direct-response result rather than for it: the thinking cells used the newer
-generation, and they still underperformed the older Lite direct-response setup
-on held-out liking, speed, and structured-output reliability. The clean
-isolation of thinking level is the minimal-versus-low contrast within Gemini 3
-Flash. We do not conclude that deeper thinking is generally better or
+direct-response result rather than for it. Any intelligence gap between Gemini
+2.5 and Gemini 3 favored the thinking arm, so it is especially surprising that
+the newer generation with thinking still underperformed the older Lite
+direct-response setup on held-out liking, speed, and structured-output
+reliability. The clean isolation of thinking level is the minimal-versus-low
+contrast within Gemini 3 Flash. We do not conclude that deeper thinking is generally better or
 generally worse. We conclude that the thinking setting changed the
 measurement, in cost and in quality, and that nothing about the more
 deliberative options made them automatically superior. That is the finding a
@@ -1159,7 +1162,7 @@ specific ranking of settings will hold for every laboratory.
 
 Within that family the comparison spans a direct-response setup on Gemini 2.5
 Flash Lite and two thinking levels on Gemini 3 Flash. When the experiments
-were first run and the main pattern appeared, Gemini 3 Flash was already
+were first run and the primary contrast emerged, Gemini 3 Flash was already
 available for thinking-enabled scoring, but Gemini 3 Flash Lite was not, so
 the matched fast Lite non-thinking path remained 2.5 Flash Lite. The headline
 contrast therefore confounds thinking setting with generation and cannot
@@ -1167,13 +1170,15 @@ attribute the gap to thinking alone; only the minimal-versus-low contrast
 within Gemini 3 Flash isolates thinking level. We chose those two thinking
 levels as the low end of the product dial for a deployment-like cost and
 latency regime; higher thinking levels were not tested. The confound does not
-rescue a weak direct-response model: if anything, giving the thinking path the
-newer generation makes the failure of extra thinking on this task more
-informative. Within the thinking-capable generation at six points and
-temperature 0.7, low thinking improved prediction and structured-output
-reliability relative to minimal thinking but increased runtime, and neither
-closed the gap to the direct-response configuration. Whether some task exists
-at which higher thinking levels would dominate is an open question.
+rescue a weak direct-response model. Because any capability gap between Gemini
+2.5 and Gemini 3 favored the thinking arm, the clarity of the
+direct-response advantage is especially surprising and more informative than
+a same-generation comparison would have been. Within the thinking-capable
+generation at six points and temperature 0.7, low thinking improved
+prediction and structured-output reliability relative to minimal thinking but
+increased runtime, and neither closed the gap to the direct-response
+configuration. Whether some task exists at which higher thinking levels would
+dominate is an open question.
 
 Because providers update aliases, what lasts is the pilot loop and the saved
 scoring outputs. The public archive records the exact alias strings used, the
