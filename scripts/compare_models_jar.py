@@ -42,9 +42,9 @@ PAIRS = [
 ]
 
 CONFIGS = [
-    ("Flash Lite (non-thinking)", "topic_level_flash_lite_scores.csv", "#333333"),
-    ("Gemini 3 Flash (minimal)", "topic_level_g3flash_minimal_scores.csv", "#777777"),
-    ("Gemini 3 Flash (low)", "topic_level_g3flash_low_scores.csv", "#DDDDDD"),
+    ("Direct-response", "topic_level_flash_lite_scores.csv", "#333333"),
+    ("Minimal thinking", "topic_level_g3flash_minimal_scores.csv", "#777777"),
+    ("Low thinking", "topic_level_g3flash_low_scores.csv", "#DDDDDD"),
 ]
 
 
@@ -120,7 +120,7 @@ def render(results: dict, out_path: Path) -> None:
             linewidth=0.7,
             zorder=2,
         )
-        if "minimal" in name.lower():
+        if name == "Minimal thinking":
             for b in bars:
                 b.set_hatch("///")
         mi += 1
@@ -146,7 +146,7 @@ def render(results: dict, out_path: Path) -> None:
     ax2.bar_label(b1, labels=[f"{v:.2f}" for v in recov], padding=2, fontsize=7.5)
     ax2.bar_label(b2, labels=[f"{v:.2f}" for v in gap], padding=2, fontsize=7.5)
     ax2.set_facecolor(BG)
-    short = [n.replace(" (", "\n(") for n in names]
+    short = [n.replace(" ", "\n") if n != "Direct-response" else "Direct-\nresponse" for n in names]
     ax2.set_xticks(xx, short, fontsize=7.5)
     ax2.set_ylim(0, max(max(recov), max(gap)) * 1.25)
     ax2.legend(frameon=False, fontsize=8)

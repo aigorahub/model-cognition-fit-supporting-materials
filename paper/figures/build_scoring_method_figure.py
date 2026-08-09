@@ -59,18 +59,18 @@ def add_box(ax, x, y, w, h, title, kicker, rows, fill, edge):
         row_y -= 0.105
 
 
-def draw_pipeline_banner(ax, y0=0.78, height=0.18):
-    """Five-step pipeline as a top banner inside the methods figure."""
+def draw_pipeline_banner(ax, y0=0.88, height=0.10):
+    """Compact five-step pipeline banner (short labels, low height)."""
     labels = [
-        "Actual +\nideal comments",
-        "LLM alignment\nscoring",
-        "Visual\nTexture\nFlavor",
+        "Actual + ideal",
+        "LLM scoring",
+        "Three scores",
         "TabPFN",
-        "Held-out\nliking 0-10",
+        "Held-out liking",
     ]
     n = len(labels)
     left, right = 0.04, 0.96
-    gap = 0.018
+    gap = 0.022
     total_w = right - left
     box_w = (total_w - gap * (n - 1)) / n
     y = y0
@@ -84,10 +84,10 @@ def draw_pipeline_banner(ax, y0=0.78, height=0.18):
                 (x, y),
                 box_w,
                 h,
-                boxstyle="round,pad=0.008,rounding_size=0.015",
+                boxstyle="round,pad=0.006,rounding_size=0.012",
                 facecolor=SURFACE,
                 edgecolor=INK,
-                linewidth=0.8,
+                linewidth=0.75,
             )
         )
         ax.text(
@@ -96,9 +96,8 @@ def draw_pipeline_banner(ax, y0=0.78, height=0.18):
             lab,
             ha="center",
             va="center",
-            fontsize=6.2,
+            fontsize=6.8,
             color=INK,
-            linespacing=1.1,
         )
     for i in range(n - 1):
         x1 = xs[i] + box_w
@@ -106,18 +105,18 @@ def draw_pipeline_banner(ax, y0=0.78, height=0.18):
         mid_y = y + h / 2
         ax.add_patch(
             FancyArrowPatch(
-                (x1 + 0.004, mid_y),
-                (x2 - 0.004, mid_y),
+                (x1 + 0.003, mid_y),
+                (x2 - 0.003, mid_y),
                 arrowstyle="-|>",
-                mutation_scale=8,
-                linewidth=0.8,
+                mutation_scale=7,
+                linewidth=0.75,
                 color=MUTED,
             )
         )
 
 
 def main():
-    fig, ax = plt.subplots(figsize=(7.4, 5.6), dpi=300)
+    fig, ax = plt.subplots(figsize=(7.4, 5.5), dpi=300)
     ax.set_facecolor(CANVAS)
     ax.set_xlim(0, 1)
     ax.set_ylim(0, 1)
@@ -127,7 +126,7 @@ def main():
 
     ax.text(
         0.04,
-        0.74,
+        0.82,
         "Example evaluation (liking withheld from the model; used only in downstream TabPFN).",
         ha="left",
         va="top",
@@ -150,9 +149,9 @@ def main():
     add_box(
         ax,
         0.04,
-        0.22,
+        0.20,
         0.40,
-        0.48,
+        0.56,
         "Actual product response",
         "Consumer H041 · product J09 · liking 8.90 hidden",
         actual_rows,
@@ -162,9 +161,9 @@ def main():
     add_box(
         ax,
         0.56,
-        0.22,
+        0.20,
         0.40,
-        0.48,
+        0.56,
         "Same consumer ideal response",
         "Ideal Free-Comment questionnaire",
         ideal_rows,
@@ -174,11 +173,11 @@ def main():
 
     ax.annotate(
         "",
-        xy=(0.545, 0.46),
-        xytext=(0.455, 0.46),
+        xy=(0.545, 0.48),
+        xytext=(0.455, 0.48),
         arrowprops=dict(arrowstyle="-|>", color=INK, lw=1.0),
     )
-    ax.text(0.50, 0.49, "same\nprompt", ha="center", va="bottom", fontsize=5.6, color=MUTED, linespacing=0.95)
+    ax.text(0.50, 0.51, "same\nprompt", ha="center", va="bottom", fontsize=5.6, color=MUTED, linespacing=0.95)
 
     strip = FancyBboxPatch(
         (0.03, 0.02),
@@ -232,14 +231,9 @@ def main():
         color=MUTED,
     )
 
-    for ext in ("png", "svg", "pdf"):
-        out = OUT_DIR / f"llm_scoring_example.{ext}"
-        fig.savefig(out, bbox_inches="tight", facecolor=CANVAS, pad_inches=0.06)
-        print(f"wrote {out.relative_to(ROOT)}")
-    # methods alias used by manuscript after merge
-    fig.savefig(OUT_DIR / "methods_pipeline.png", dpi=300, bbox_inches="tight", facecolor=CANVAS, pad_inches=0.06)
-    fig.savefig(OUT_DIR / "methods_pipeline.pdf", dpi=300, bbox_inches="tight", facecolor=CANVAS, pad_inches=0.06)
-    print("wrote paper/figures/methods_pipeline.png")
+    # Manuscript uses workflow_scoring.png only (merged pipeline + example).
+    fig.savefig(OUT_DIR / "workflow_scoring.png", dpi=300, bbox_inches="tight", facecolor=CANVAS, pad_inches=0.06)
+    print(f"wrote paper/figures/workflow_scoring.png")
     plt.close(fig)
 
 
