@@ -340,13 +340,29 @@ terms they are:
 \item that generation at \texttt{thinkingLevel = "low"}.
 \end{enumerate}
 
+Those three cells match how the product stack was actually offered for fast
+scoring at that date. The direct-response path used the family's ordinary
+fast non-thinking alias then in use for production-style scoring
+(\texttt{gemini-flash-lite-latest}, Gemini 2.5 Flash Lite). Thinking-enabled
+scoring was available on a related Flash generation in the same family
+(\texttt{gemini-3-flash-preview}, Gemini 3 Flash), with an explicit
+\texttt{thinkingLevel} control. We used the low end of that dial
+(\texttt{minimal} and \texttt{low}) so the contrast stayed near ordinary
+deployment cost and latency, rather than max reasoning. Higher thinking
+levels were not tested; the aim was whether any extra thinking helped on this
+task, not to map the full dial.
+
 The last two share one base model, so they form a within-model thinking
-gradient. Higher thinking levels were not tested. For auditability the archive
-stores the API aliases used at call time
-(\texttt{gemini-flash-lite-latest} for the direct-response setup;
-\texttt{gemini-3-flash-preview} for the two thinking setups). The provider did
-not return a separate immutable model revision identifier in the saved
-response metadata. What matters for audit is the setting used
+gradient. The headline contrast between direct-response and thinking also
+changes generation (2.5 Flash Lite versus Gemini 3 Flash), because that is how
+the provider exposed direct-response versus thinking-capable Flash at scoring
+time. That is a real confound for attributing the gap to thinking alone. It
+also makes the main pattern harder to dismiss as a weak-model artifact: the
+thinking cells used the newer, more capable generation in the family, and
+they still did not close the gap to the older direct-response setup on this
+task. For auditability the archive stores the API aliases used at call time.
+The provider did not return a separate immutable model revision identifier in
+the saved response metadata. What matters for audit is the setting used
 (direct-response versus thinking level), temperature, scoring date, and the
 per-evaluation scores, not the brand label. Named systems change quickly; the
 question for science is whether the thinking setting changed measurement
@@ -985,16 +1001,24 @@ configurations differ only in thinking level, and moving from minimal to low
 thinking did not behave as a simple improvement: low thinking was somewhat
 better on prediction, the two were essentially tied on JAR recovery, and
 neither closed the gap to the direct-response configuration
-(Section~\ref{sec:gridresults} and Section~\ref{sec:jar}). We do not conclude
-that deeper thinking is generally better or generally worse. We conclude that
-the thinking setting changed the measurement, in cost and in quality, and that
-nothing about the more deliberative options made them automatically superior.
-That is the finding a researcher should carry into their own workflow: model
-settings matter, and the direction of their effect on a given task is an
-empirical question. Because LLM workflows are often judged as if capability
-were one-dimensional, the natural default is to reach for the most advanced or
-most deliberative option. On this task that default would have produced a
-slower, less accurate, less reliable scorer.
+(Section~\ref{sec:gridresults} and Section~\ref{sec:jar}). The headline
+direct-response versus thinking contrast confounds thinking with model
+generation (Gemini 2.5 Flash Lite versus Gemini 3 Flash), as available at
+scoring time (Section~\ref{sec:models}). That confound works against the
+direct-response result rather than for it: the thinking cells used the newer
+generation, and they still underperformed the older direct-response setup on
+held-out liking, speed, and structured-output reliability. The clean
+isolation of thinking level is the minimal-versus-low contrast within Gemini
+3 Flash. We do not conclude that deeper thinking is generally better or
+generally worse. We conclude that the thinking setting changed the
+measurement, in cost and in quality, and that nothing about the more
+deliberative options made them automatically superior. That is the finding a
+researcher should carry into their own workflow: model settings matter, and
+the direction of their effect on a given task is an empirical question.
+Because LLM workflows are often judged as if capability were one-dimensional,
+the natural default is to reach for the most advanced or most deliberative
+option. On this task that default would have produced a slower, less accurate,
+less reliable scorer.
 
 Beyond the configuration contrast, direct LLM alignment scoring turned IFC
 data into useful predictors of liking. The model received paired actual and
@@ -1131,16 +1155,22 @@ exploration, not as universal. The scientific claim we stand behind is that
 thinking level is worth testing on sensory text-scoring tasks, not that the
 specific ranking of settings will hold for every laboratory.
 
-Within that family the comparison spans a direct-response setup and two
-thinking levels of a related generation. The direct-response configuration
-also differs from the two thinking configurations in generation, so the
-headline contrast cannot attribute the gap to the thinking setting alone;
-only the within-model contrast isolates thinking level. Higher thinking
-levels were not tested. Within the thinking-capable generation at six points
-and temperature 0.7, low thinking improved prediction and structured-output
-reliability relative to minimal thinking but increased runtime, and neither
-closed the gap to the direct-response configuration. Whether some task exists
-at which higher thinking levels would dominate is an open question.
+Within that family the comparison spans a direct-response setup on Gemini 2.5
+Flash Lite and two thinking levels on Gemini 3 Flash, the product slots
+available for fast non-thinking versus thinking-capable scoring when we ran
+the work. The headline contrast therefore confounds thinking setting with
+generation and cannot attribute the gap to thinking alone; only the
+minimal-versus-low contrast within Gemini 3 Flash isolates thinking level.
+We chose those two thinking levels as the low end of the product dial for a
+deployment-like cost and latency regime; higher thinking levels were not
+tested. The confound does not rescue a weak direct-response model: if
+anything, giving the thinking path the newer generation makes the failure of
+extra thinking on this task more informative. Within the thinking-capable
+generation at six points and temperature 0.7, low thinking improved
+prediction and structured-output reliability relative to minimal thinking but
+increased runtime, and neither closed the gap to the direct-response
+configuration. Whether some task exists at which higher thinking levels would
+dominate is an open question.
 
 Because providers update aliases, what lasts is the pilot loop and the saved
 scoring outputs. The public archive records the exact alias strings used, the
